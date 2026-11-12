@@ -1,0 +1,7 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="56" fill="#071527" stroke="#3B82F6" stroke-width="3"/>
+  <circle cx="60" cy="46" r="20" fill="#60A5FA" fill-opacity="0.3" stroke="#60A5FA" stroke-width="2"/>
+  <path d="M 32 94 C 32 76 44 72 60 72 C 76 72 88 76 88 94" fill="#3B82F6" fill-opacity="0.5" stroke="#60A5FA" stroke-width="2"/>
+  <text x="60" y="52" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">KW</text>
+</svg>
+

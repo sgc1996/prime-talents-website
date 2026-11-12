@@ -1,0 +1,7 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="20" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+  <path d="M 12 24 L 28 24 M 20 16 L 20 32" stroke="currentColor" stroke-width="2"/>
+  <text x="46" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="currentColor" letter-spacing="1">COLOMBO PAY</text>
+  <text x="46" y="38" font-family="system-ui, sans-serif" font-size="8" fill="currentColor" opacity="0.6">FINTECH VENTURES</text>
+</svg>
+
