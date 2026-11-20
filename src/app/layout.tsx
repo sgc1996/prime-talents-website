@@ -11,7 +11,7 @@ import { ThemeProvider } from "next-themes";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Executive Search & HR Outsourcing Sri Lanka`,
+    default: `Prime Talents Solutions (Pvt) Ltd | Recruitment & Talent Solutions Sri Lanka`,
     template: `%s | ${siteConfig.name}`,
   },
   description:
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     locale: "en_LK",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Executive Search & HR Outsourcing Sri Lanka`,
+    title: `Prime Talents Solutions (Pvt) Ltd | Recruitment & Talent Solutions Sri Lanka`,
     description: siteConfig.description,
     images: [
       {
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Executive Search & HR Outsourcing Sri Lanka`,
+    title: `Prime Talents Solutions (Pvt) Ltd | Recruitment & Talent Solutions Sri Lanka`,
     description: siteConfig.description,
     images: ["/images/hero-abstract.svg"],
     creator: "@primetalents",

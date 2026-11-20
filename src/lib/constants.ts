@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Prime Talents Solutions Pvt Ltd",
+  name: "Prime Talents Solutions (Pvt) Ltd",
   legalName: "Prime Talents Solutions (Pvt) Ltd",
   brandName: "Prime Talents Solutions",
   tagline: "Connecting Ambition with Opportunity",
