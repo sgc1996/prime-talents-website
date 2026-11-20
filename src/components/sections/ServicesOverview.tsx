@@ -19,7 +19,7 @@ const MAIN_SERVICES = [
     description:
       "We help growing businesses across Sri Lanka find and hire the right talent—fast. By combining modern sourcing strategies with thorough candidate screening, we take the stress out of hiring so you can focus on scaling your business.",
     points: [
-      "Targeted sourcing for junior, mid-level, and specialist roles across key industries",
+      "Role-focused sourcing aligned with your team requirements and timeline",
       "Pre-screened & verified candidates with thorough background and reference checks",
       "Within 72 hours shortlist turnaround to keep your hiring pipeline moving",
       "Flexible 90-day replacement guarantee for complete peace of mind",
