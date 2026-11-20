@@ -76,8 +76,8 @@ export function Footer() {
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               Sri Lanka&apos;s outcome-focused human capital consultancy. We bridge
-              enterprises with exceptional executive talent, compliant payroll
-              infrastructure, and turnkey PEO outsourcing solutions.
+              enterprises with exceptional executive talent, specialized staffing,
+              and strategic workforce solutions.
             </p>
 
             <div className="pt-2">
@@ -187,17 +187,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/services#outsourcing" className="hover:text-teal-400 transition-colors">
-                  HR Outsourcing & PEO
+                  Staff Augmentation
                 </Link>
               </li>
               <li>
                 <Link href="/services#training" className="hover:text-teal-400 transition-colors">
                   Corporate Training
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#payroll" className="hover:text-teal-400 transition-colors">
-                  Payroll & EPF/ETF
                 </Link>
               </li>
               <li>

@@ -58,7 +58,7 @@ export default function NotFound() {
               <p className="font-bold text-xs sm:text-sm text-navy-950 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400">
                 Our Services
               </p>
-              <p className="text-[11px] text-slate-400">Recruitment, Payroll &amp; PEO</p>
+              <p className="text-[11px] text-slate-400">Executive Search &amp; Sourcing</p>
             </div>
           </Link>
 

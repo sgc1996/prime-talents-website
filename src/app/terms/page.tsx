@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/Badge";
 export const metadata: Metadata = {
   title: "Terms & Conditions | Recruitment & Advisory Engagement Terms",
   description:
-    "Terms and Conditions governing human resources consultancy, executive search, candidate placement, and managed payroll services by Prime Talents Solutions (Pvt) Ltd.",
+    "Terms and Conditions governing human resources consultancy, executive search, candidate placement, and staff augmentation services by Prime Talents Solutions (Pvt) Ltd.",
 };
 
 export default function TermsConditionsPage() {
@@ -61,8 +61,8 @@ export default function TermsConditionsPage() {
               party.
             </li>
             <li>
-              <strong>No Fee for Candidates:</strong> In strict alignment with Sri Lankan labor
-              regulations, no candidate shall be subjected to fees, commissions, or payroll
+              <strong>No Fee for Candidates:</strong> In strict alignment with ethical recruitment
+              principles, no candidate shall be subjected to fees, commissions, or salary
               deductions for securing employment through the Company.
             </li>
           </ul>
@@ -86,14 +86,14 @@ export default function TermsConditionsPage() {
 
         <section className="space-y-3">
           <h2 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
-            4. Statutory Payroll &amp; Compliance Obligations
+            4. Staff Augmentation &amp; Contractor Engagements
           </h2>
           <p>
-            Where the Company acts as managed payroll facilitator or Employer of Record (EOR),
-            the Client agrees to provide accurate timesheets, gross salary parameters, and bonus
-            data within agreed cutoff schedules. Statutory remittances (EPF, ETF, APIT) will be
-            computed strictly in adherence to the guidelines of the Department of Labour and Inland
-            Revenue Department of Sri Lanka.
+            Where the Company supplies contract or augmented personnel to the Client,
+            the Client agrees to provide accurate project specifications, approved time logs,
+            and role parameters. The Client maintains day-to-day operational supervision of
+            augmented personnel, while the Company facilitates sourcing, credential vetting,
+            and contractor administration.
           </p>
         </section>
 

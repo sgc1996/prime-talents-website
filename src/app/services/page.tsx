@@ -6,7 +6,6 @@ import {
   UserCheck,
   Users,
   GraduationCap,
-  Calculator,
   ShieldCheck,
   CheckCircle2,
   ArrowRight,
@@ -19,9 +18,9 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "HR Services & Solutions | Executive Search, Payroll, Outsourcing",
+  title: "HR Services & Solutions | Executive Search & Staff Augmentation",
   description:
-    "Explore Prime Talents Solutions full suite of workforce capabilities in Sri Lanka: Executive Search (#recruitment), HR Outsourcing (#outsourcing), Training (#training), Payroll & EPF/ETF (#payroll), and Consultancy (#consultancy).",
+    "Explore Prime Talents Solutions full suite of workforce capabilities in Sri Lanka: Executive Search (#recruitment), Staff Augmentation (#outsourcing), Corporate Training (#training), and Strategic Consultancy (#consultancy).",
 };
 
 export default function ServicesPage() {
@@ -34,8 +33,8 @@ export default function ServicesPage() {
           Tailored Human Capital Solutions for Every Stage of Growth
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          From recruiting niche executive talent and managing entire contractor
-          payrolls to building corporate training academies, we deliver measurable results.
+          From recruiting niche executive talent and building skilled contractor teams
+          to corporate training and organizational advisory, we deliver measurable results.
         </p>
 
         {/* Anchor Quick-Nav Pill Bar */}
@@ -56,19 +55,13 @@ export default function ServicesPage() {
             href="#outsourcing"
             className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
           >
-            HR Outsourcing (HRO/PEO)
+            Staff Augmentation
           </a>
           <a
             href="#training"
             className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
           >
             Corporate Training
-          </a>
-          <a
-            href="#payroll"
-            className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
-          >
-            Payroll &amp; EPF/ETF
           </a>
           <a
             href="#consultancy"
@@ -198,45 +191,44 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Anchor 3: HR Outsourcing & PEO */}
+      {/* Anchor 3: Staff Augmentation & Contract Staffing */}
       <section id="outsourcing" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-wider">
               <Users className="w-4 h-4" />
-              <span>Staff Augmentation &amp; PEO</span>
+              <span>Staff Augmentation</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-              Turnkey HR Outsourcing &amp; Employer of Record (EOR)
+              Flexible Staff Augmentation &amp; Contract Talent
             </h2>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Hire talent in Sri Lanka within days, completely eliminating the time
-              and capital required to establish a local subsidiary. We become the legal
-              Employer of Record, managing onboarding, employment contracts, benefits,
-              and compliance while you manage their daily workflow.
+              Scale your operational and technical teams with pre-screened professionals
+              tailored to your project deliverables. We manage candidate sourcing, credential
+              verification, and seamless placement so you can accelerate your business objectives.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Zero Local Entity Required</span>
+                <span>Rapid Talent Sourcing &amp; Deployment</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Onboarding within 7 Business Days</span>
+                <span>Specialized Tech &amp; Corporate Roles</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Hardware &amp; IT Stipend Logistics</span>
+                <span>Interview-Ready Candidate Shortlists</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Full Indemnification Against Liability</span>
+                <span>Flexible Contract Durations</span>
               </div>
             </div>
             <div className="pt-2">
               <Link href="/appointment">
                 <Button variant="accent" className="font-bold">
-                  Inquire About PEO &amp; EOR
+                  Inquire About Staff Augmentation
                 </Button>
               </Link>
             </div>
@@ -245,7 +237,7 @@ export default function ServicesPage() {
             <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-xl bg-slate-50 dark:bg-navy-950 p-2">
               <Image
                 src="/images/services/outsourcing.svg"
-                alt="HR Outsourcing and PEO Sri Lanka"
+                alt="Staff Augmentation Sri Lanka"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-2xl"
@@ -311,64 +303,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Anchor 5: Payroll & Statutory Compliance */}
-      <section id="payroll" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-6 space-y-6">
-            <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-wider">
-              <Calculator className="w-4 h-4" />
-              <span>Payroll &amp; Labour Compliance</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-              Audit-Proof Payroll, EPF, ETF &amp; APIT Management
-            </h2>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Managing payroll in Sri Lanka requires adherence to complex statutory
-              remittance schedules, dynamic APIT tax brackets, and Department of
-              Labour regulations. We remove this administrative burden, providing
-              guaranteed compliance, electronic payslips, and direct bank transfers.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>EPF Monthly C-Form Filing (20%)</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>ETF Board Remittances (3%)</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>IRD APIT RAMIS Synchronization</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Confidential Encrypted Payslips</span>
-              </div>
-            </div>
-            <div className="pt-2">
-              <Link href="/appointment">
-                <Button variant="accent" className="font-bold">
-                  Schedule Payroll Consultation
-                </Button>
-              </Link>
-            </div>
-          </div>
-          <div className="lg:col-span-6">
-            <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-xl bg-slate-50 dark:bg-navy-950 p-2">
-              <Image
-                src="/images/services/payroll.svg"
-                alt="Sri Lanka Payroll Services"
-                width={600}
-                height={400}
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Anchor 6: HR Consultancy */}
+      {/* Anchor 5: HR Consultancy */}
       <section id="consultancy" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-12 md:p-16 rounded-3xl bg-slate-50 dark:bg-navy-900 border border-slate-200/80 dark:border-navy-800 space-y-10">
           <div className="max-w-3xl space-y-4">

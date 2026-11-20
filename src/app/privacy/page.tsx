@@ -59,8 +59,7 @@ export default function PrivacyPolicyPage() {
             <li>
               <strong>Employer &amp; Corporate Client Data:</strong> Organization name, business
               registration (BR) number, registered address, authorized executive contact details,
-              job requisition specifications, and financial details for invoicing and payroll
-              disbursement.
+              job requisition specifications, and financial details for invoicing.
             </li>
             <li>
               <strong>Digital Portal &amp; Usage Data:</strong> IP addresses, browser types,
@@ -82,13 +81,7 @@ export default function PrivacyPolicyPage() {
               prior candidate consent).
             </li>
             <li>
-              Executing statutory payroll processing, including Employees&apos; Provident Fund
-              (EPF), Employees&apos; Trust Fund (ETF), and Advance Personal Income Tax (APIT)
-              withholding under the Department of Labour and Inland Revenue Department.
-            </li>
-            <li>
-              Fulfilling contractual obligations under Employer of Record (EOR) and Professional
-              Employer Organization (PEO) agreements.
+              Managing candidate placements and fulfilling contractual talent acquisition agreements.
             </li>
             <li>
               Communicating relevant market intelligence, masterclasses, and executive training

@@ -24,8 +24,8 @@ export function FinalCtaBanner() {
         </h2>
 
         <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          Whether you need to fill mission-critical executive roles, establish a compliant
-          payroll system, or access premier career opportunities in Sri Lanka, our
+          Whether you need to fill mission-critical executive roles, scale your project
+          teams with contract talent, or access premier career opportunities in Sri Lanka, our
           partners are ready to deliver.
         </p>
 

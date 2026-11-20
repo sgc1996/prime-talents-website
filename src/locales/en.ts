@@ -15,7 +15,7 @@ export const en = {
     badge: "Trusted HR & Executive Search Partner in Sri Lanka",
     title: "Looking for Exceptional Talent to Scale Your Enterprise?",
     subtitle:
-      "We connect visionary organizations with high-impact professionals, compliant payroll systems, and turnkey HR outsourcing across Sri Lanka and the Asia-Pacific region.",
+      "We connect visionary organizations with high-impact professionals, flexible contract staffing, and strategic talent solutions across Sri Lanka.",
     ctaPrimary: "Book an Appointment",
     ctaSecondary: "Visit Job Portal",
     statClients: "150+ Enterprise Clients",

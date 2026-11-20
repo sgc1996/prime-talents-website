@@ -11,7 +11,7 @@ import { siteConfig } from "@/lib/constants";
 interface FAQItem {
   q: string;
   a: string;
-  category: "employers" | "jobseekers" | "payroll" | "pricing";
+  category: "employers" | "jobseekers" | "staffing" | "pricing";
 }
 
 const FAQ_DATA: FAQItem[] = [
@@ -27,13 +27,13 @@ const FAQ_DATA: FAQItem[] = [
   },
   {
     category: "employers",
-    q: "Can you assist international companies looking to hire in Sri Lanka without establishing a local entity?",
-    a: "Absolutely. Through our Employer of Record (EOR) and Professional Employer Organization (PEO) services, we legally employ the talent on your behalf in Sri Lanka. We manage local employment contracts, EPF/ETF contributions, tax deductions, and benefits administration while you maintain 100% operational direction.",
+    q: "Can you provide temporary or contract staff for short-term projects?",
+    a: "Yes. Our staff augmentation and contract staffing service supplies qualified technical, administrative, and operational professionals for project-based or seasonal assignments, helping you scale quickly without long-term overhead.",
   },
   {
     category: "jobseekers",
     q: "Do job seekers pay any fees to Prime Talents Solutions?",
-    a: "Never. Under our strict ethical charter and Sri Lankan Department of Labour regulations, we never charge candidates for job placement, CV registration, or interview scheduling. Our recruitment services are entirely employer-funded.",
+    a: "Never. Under our strict ethical charter, we never charge candidates for job placement, CV registration, or interview scheduling. Our recruitment services are entirely employer-funded.",
   },
   {
     category: "jobseekers",
@@ -46,19 +46,19 @@ const FAQ_DATA: FAQItem[] = [
     a: "We maintain absolute confidentiality. We will never share your profile, CV, or employment history with any potential employer without your explicit prior authorization.",
   },
   {
-    category: "payroll",
-    q: "What statutory payroll deductions are mandatory under Sri Lankan Labour Law?",
-    a: "Under the EPF Act No. 15 of 1958 and ETF Act No. 46 of 1980, the mandatory statutory deductions are: Employee EPF (minimum 8%), Employer EPF (minimum 12%), and Employer ETF (3%). In addition, Advance Personal Income Tax (APIT) must be withheld at source for employees earning above the statutory monthly tax threshold (currently LKR 100,000).",
+    category: "staffing",
+    q: "How does contract staffing work with Prime Talents Solutions?",
+    a: "We deploy verified candidates to work on your designated projects according to your scope and schedule requirements, handling sourcing, vetting, and workforce coordination so you can focus on execution.",
   },
   {
-    category: "payroll",
-    q: "What is your payroll turnaround time and reporting frequency?",
-    a: "We operate on your established monthly pay cycle. Monthly salary calculations, encrypted digital payslips, electronic bank transfer files, and statutory C-Form reconciliations are finalized and delivered 3 business days prior to your monthly pay date.",
+    category: "staffing",
+    q: "How quickly can contract or temporary personnel be deployed?",
+    a: "Depending on role specialization, pre-vetted contractors and technical staff can typically be onboarded within 3 to 7 business days.",
   },
   {
     category: "pricing",
     q: "What are your recruitment engagement and fee structures?",
-    a: "For permanent placements, we operate on a success-fee model (a percentage of the candidate's first-year gross annual remuneration, payable only once the candidate commences employment). For retained executive search (C-suite/VP), we offer milestone-based retained arrangements. PEO/EOR and managed payroll services are billed as predictable monthly per-employee service fees.",
+    a: "For permanent placements, we operate on a success-fee model (a percentage of the candidate's first-year gross annual remuneration, payable only once the candidate commences employment). For retained executive search (C-suite/VP), we offer milestone-based retained arrangements. Staff augmentation engagements are structured based on agreed transparent day-rates or monthly contractor fees.",
   },
 ];
 
@@ -85,8 +85,8 @@ export default function FAQPage() {
           Frequently Asked Questions
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Clear answers about our recruitment models, statutory payroll compliance,
-          candidate privacy, and Employer of Record (EOR) infrastructure.
+          Clear answers about our recruitment models, contract staffing,
+          candidate privacy, and hiring process.
         </p>
 
         {/* Real-time Search Input */}
@@ -94,7 +94,7 @@ export default function FAQPage() {
           <div className="relative">
             <input
               type="text"
-              placeholder="Search by keyword (e.g. EPF, replacement guarantee, fees, job portal)..."
+              placeholder="Search by keyword (e.g. replacement guarantee, fees, job portal)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3.5 rounded-2xl border border-slate-300 dark:border-navy-700 bg-white dark:bg-navy-900 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-sm text-navy-950 dark:text-white"
@@ -111,7 +111,7 @@ export default function FAQPage() {
             { id: "all", label: "All Questions" },
             { id: "employers", label: "For Employers" },
             { id: "jobseekers", label: "For Job Seekers" },
-            { id: "payroll", label: "Payroll & EPF/ETF" },
+            { id: "staffing", label: "Staff Augmentation" },
             { id: "pricing", label: "Pricing & Models" },
           ].map((cat) => (
             <button

@@ -33,10 +33,10 @@ const LEADERSHIP_TEAM = [
   },
   {
     name: "Kavinda Wickramasinghe",
-    role: "Director of Payroll & Statutory Compliance",
-    bio: "Former corporate tax and labor law compliance lead. Specializes in Department of Labour audits, EPF/ETF administration, and APIT restructuring.",
+    role: "Head of Operations & Client Partnerships",
+    bio: "Experienced operations and client engagement lead with extensive background in workforce planning, recruitment delivery cycles, and industry partner relationships.",
     avatar: "/images/team/avatar-2.svg",
-    credentials: "FCA (CA Sri Lanka), ACMA (CIMA UK), LL.B",
+    credentials: "MBA, B.Sc. Business Administration, SHRM-CP",
   },
   {
     name: "Dr. Anoma Jayasuriya",
@@ -50,7 +50,7 @@ const LEADERSHIP_TEAM = [
 const CORE_VALUES = [
   {
     title: "Uncompromising Integrity",
-    desc: "We practice full transparency in candidate assessments, employer SLAs, and statutory payroll remittances without shortcuts.",
+    desc: "We practice full transparency in candidate assessments, employer SLAs, and ethical recruitment practices without shortcuts.",
     icon: ShieldCheck,
   },
   {
@@ -78,13 +78,13 @@ const MILESTONES = [
   },
   {
     year: "2019",
-    title: "Launch of Managed Payroll Desk",
-    desc: "Expanded into turnkey statutory payroll and labour compliance, servicing over 40 corporate entities.",
+    title: "Expansion into Staff Augmentation",
+    desc: "Expanded into flexible staff augmentation and contract staffing, servicing over 40 leading corporate enterprises across Sri Lanka.",
   },
   {
     year: "2021",
-    title: "Global PEO & EOR Capabilities",
-    desc: "Established Employer of Record infrastructure allowing international enterprises to hire Sri Lankan engineering talent compliantly.",
+    title: "Industry Verticals & Tech Specialization",
+    desc: "Launched specialized recruitment divisions for Information Technology, Banking & Finance, and Manufacturing sectors.",
   },
   {
     year: "2024",
@@ -278,7 +278,7 @@ export default function AboutPage() {
             </h3>
             <p className="text-slate-300 text-sm max-w-xl">
               Schedule a discovery session with our Colombo practice heads to discuss
-              your headcount goals or payroll compliance.
+              your headcount and talent acquisition goals.
             </p>
           </div>
           <Link href="/appointment" className="shrink-0">

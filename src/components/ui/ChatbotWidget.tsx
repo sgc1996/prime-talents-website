@@ -23,15 +23,15 @@ const CANNED_QUESTIONS = [
   },
   {
     q: "What are your employer recruitment fees?",
-    a: "We operate primarily on a success-fee model for permanent placements (no upfront cost until your candidate starts), with retained search models for C-suite executive roles. We also offer fixed-rate monthly PEO/EOR arrangements.",
+    a: "We operate primarily on a success-fee model for permanent placements (no upfront cost until your candidate starts), with retained search models for C-suite executive roles.",
     link: "/appointment",
     linkLabel: "Book a Consultation",
   },
   {
-    q: "Do you handle Sri Lankan EPF, ETF & APIT payroll?",
-    a: "Yes! Our payroll desk manages end-to-end statutory calculations, monthly C-Form electronic submissions, ETF remittances, and IRD RAMIS-compliant APIT tax withholding with 100% audit protection.",
-    link: "/services#payroll",
-    linkLabel: "Explore Payroll Services",
+    q: "Can you provide contract or temporary staffing?",
+    a: "Yes! We provide flexible staff augmentation and contract staffing across tech, operations, and corporate functions with fast turnaround times.",
+    link: "/services#outsourcing",
+    linkLabel: "Explore Staff Augmentation",
   },
   {
     q: "What is your typical placement turnaround time?",
@@ -109,8 +109,8 @@ export function ChatbotWidget() {
         actions = [{ label: "Visit Job Portal", href: siteConfig.jobPortalUrl }];
       } else if (lower.includes("payroll") || lower.includes("epf") || lower.includes("tax")) {
         botResponse =
-          "We offer comprehensive payroll outsourcing covering EPF, ETF, and APIT compliance under Sri Lankan labour law.";
-        actions = [{ label: "View Payroll Solutions", href: "/services#payroll" }];
+          "Prime Talents Solutions specializes exclusively in executive search, talent recruitment, and staff augmentation. We do not provide statutory payroll or EPF/ETF processing services.";
+        actions = [{ label: "View Our Recruitment Services", href: "/services" }];
       } else if (lower.includes("fee") || lower.includes("cost") || lower.includes("price") || lower.includes("hire")) {
         botResponse =
           "We provide customized engagement models tailored to your hiring volume and organizational size.";

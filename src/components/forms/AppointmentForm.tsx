@@ -14,11 +14,9 @@ import { useToast } from "@/components/ui/Toast";
 const SERVICE_OPTIONS = [
   { label: "Select Service Required", value: "" },
   { label: "Executive Search & Leadership Hiring", value: "executive-search" },
-  { label: "HR Outsourcing (HRO & PEO Services)", value: "hr-outsourcing" },
-  { label: "Sri Lankan Payroll & EPF/ETF Compliance", value: "payroll-compliance" },
+  { label: "Staff Augmentation & Contract Staffing", value: "staff-augmentation" },
   { label: "Corporate Training & Leadership Development", value: "corporate-training" },
   { label: "Workforce Architecture & HR Consultancy", value: "hr-consultancy" },
-  { label: "Employer of Record (EOR) for Overseas Firm", value: "eor-overseas" },
 ];
 
 const TIME_OPTIONS = [

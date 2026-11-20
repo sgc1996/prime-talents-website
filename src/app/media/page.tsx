@@ -35,9 +35,9 @@ const PRESS_RELEASES = [
   {
     date: "November 18, 2024",
     title:
-      "Prime Talents Solutions Expands Global Employer of Record (EOR) Practice to Bridge South Asia and Australia",
+      "Prime Talents Solutions Expands Specialized Tech & Executive Search Desks Across Sri Lanka",
     summary:
-      "Turnkey staffing infrastructure enables international technology and accounting firms to onboard Sri Lankan professionals within seven business days under full statutory compliance.",
+      "Targeted recruitment desks enable high-growth technology firms and local conglomerates to onboard senior Sri Lankan professionals with accelerated 72-hour shortlist turnaround.",
     tag: "Corporate Expansion",
     readTime: "3 min read",
   },

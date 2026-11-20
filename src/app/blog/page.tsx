@@ -26,8 +26,8 @@ export default function BlogIndexPage() {
           Industry Insights &amp; Strategic HR Research
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Expert analysis on compensation trends, Department of Labour compliance,
-          executive headhunting, and cross-border workforce dynamics in Sri Lanka.
+          Expert analysis on compensation trends, talent retention strategies,
+          executive headhunting, and workforce architecture in Sri Lanka.
         </p>
       </section>
 

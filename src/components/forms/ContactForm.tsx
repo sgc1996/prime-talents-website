@@ -14,8 +14,7 @@ import { useToast } from "@/components/ui/Toast";
 const INQUIRY_OPTIONS = [
   { label: "Select Inquiry Category", value: "" },
   { label: "Employer: Hiring & Talent Search", value: "employer-hiring" },
-  { label: "Employer: HR Outsourcing & PEO", value: "employer-peo" },
-  { label: "Employer: Payroll & Compliance", value: "employer-payroll" },
+  { label: "Employer: Staff Augmentation & Contractors", value: "employer-staffing" },
   { label: "Job Seeker: Application Status / Portal", value: "candidate-portal" },
   { label: "Corporate Training & Workshops", value: "corporate-training" },
   { label: "Media & Press Inquiries", value: "media-press" },

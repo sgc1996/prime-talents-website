@@ -25,7 +25,7 @@ export default function HomePage() {
       {/* 4. Animated Stats Counters with SSR Fallback */}
       <StatsCounter />
 
-      {/* 5. Services Overview: 4 Alternating Blocks + Payroll Block */}
+      {/* 5. Services Overview: 4 Alternating Blocks */}
       <ServicesOverview />
 
       {/* 6. HR Consultancy Grid: 8 Outcome-Focused Cards */}

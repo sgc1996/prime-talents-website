@@ -17,7 +17,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us | Colombo Head Office & Inquiries",
   description:
-    "Get in touch with Prime Talents Solutions Pvt Ltd at our World Trade Center Colombo office. Reach our executive search, payroll, and candidate support teams.",
+    "Get in touch with Prime Talents Solutions Pvt Ltd at our World Trade Center Colombo office. Reach our executive search, staffing, and candidate support teams.",
 };
 
 export default function ContactPage() {

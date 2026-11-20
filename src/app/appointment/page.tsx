@@ -31,7 +31,7 @@ export default function AppointmentPage() {
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
           Schedule a direct advisory session with our senior talent acquisition
-          and statutory payroll partners at our Colombo office or via secure video conference.
+          and workforce specialists at our Colombo office or via secure video conference.
         </p>
       </section>
 
@@ -100,7 +100,7 @@ export default function AppointmentPage() {
                     </strong>
                     <span className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                       You receive a concrete hiring roadmap, salary benchmark range,
-                      or payroll compliance audit summary following the call.
+                      or strategic talent acquisition plan following the call.
                     </span>
                   </div>
                 </div>

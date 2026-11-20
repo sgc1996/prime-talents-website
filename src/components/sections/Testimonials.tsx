@@ -21,10 +21,10 @@ const TESTIMONIALS = [
     title: "Head of Human Resources",
     company: "Heritage Logistics & Ports Conglomerate",
     quote:
-      "Managing statutory compliance, EPF/ETF returns, and APIT withholding across 400+ contractors was our single biggest administrative hurdle. Migrating to Prime Talents' managed payroll eliminated payroll errors entirely and gave our executive board absolute peace of mind during Ministry audits.",
+      "Scaling our operations across maritime terminals required rapid deployment of certified logistics leads and operations personnel. Prime Talents' staffing desk delivered pre-vetted specialists within days, ensuring uninterrupted terminal workflows.",
     avatar: "/images/team/avatar-2.svg",
     rating: 5,
-    highlight: "100% Audit-Proof Payroll Outsourcing",
+    highlight: "Rapid Turnaround Contract Staffing",
   },
   {
     name: "Farhan Mohideen",
