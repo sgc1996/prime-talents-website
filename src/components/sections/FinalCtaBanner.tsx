@@ -16,17 +16,15 @@ export function FinalCtaBanner() {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/20 border border-teal-400/40 text-teal-300 text-xs font-bold uppercase tracking-wider">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Transform Your Workforce Today</span>
+          <span>START HIRING OR EXPLORE ROLES</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading tracking-tight leading-tight text-white max-w-3xl mx-auto">
-          Ready to Build a High-Performance Team or Scale Your Career?
+          Ready to Build Your Team or Find Your Next Role?
         </h2>
 
         <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          Whether you need to fill mission-critical executive roles, scale your project
-          teams with contract talent, or access premier career opportunities in Sri Lanka, our
-          partners are ready to deliver.
+          Whether you are hiring permanent or contract talent in Sri Lanka, or looking for your next career opportunity, our team is ready to help.
         </p>
 
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -58,8 +56,8 @@ export function FinalCtaBanner() {
           </a>
         </div>
 
-        <p className="text-xs text-slate-400 pt-4">
-          Prefer an immediate phone consultation? Call our Colombo desk directly at{" "}
+        <p className="text-xs sm:text-sm text-slate-400 pt-4">
+          Prefer to speak directly? Call or WhatsApp us at{" "}
           <a
             href={`tel:${siteConfig.contact.phone.replace(/\s+/g, "")}`}
             className="text-teal-400 font-semibold hover:underline"
@@ -71,4 +69,3 @@ export function FinalCtaBanner() {
     </section>
   );
 }
-
