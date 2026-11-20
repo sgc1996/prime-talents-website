@@ -45,8 +45,8 @@ export function getAllPosts(): BlogPost[] {
         description: data.description || "",
         date: data.date || new Date().toISOString(),
         author: data.author || {
-          name: "Prime Talents Research Team",
-          role: "Human Capital Advisory",
+          name: "Prime Talents Team",
+          role: "Workforce Specialists • Sri Lanka",
           avatar: "/images/team/avatar-1.svg",
         },
         category: data.category || "HR Strategy",
@@ -83,8 +83,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       description: data.description,
       date: data.date,
       author: data.author || {
-        name: "Prime Talents Advisory",
-        role: "Senior Consultant",
+        name: "Prime Talents Team",
+        role: "Workforce Specialists • Sri Lanka",
         avatar: "/images/team/avatar-1.svg",
       },
       category: data.category || "HR Strategy",

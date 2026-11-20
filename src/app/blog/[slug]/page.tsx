@@ -160,7 +160,7 @@ export default function BlogPostPage({ params }: Props) {
                 {post.author.name}
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                {post.author.role} • Colombo Desk
+                {post.author.role}
               </p>
             </div>
           </div>
