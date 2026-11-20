@@ -79,9 +79,9 @@ export const siteConfig = {
     },
     {
       id: "consultancy",
-      title: "Strategic HR Advisory & Workforce Design",
-      shortDesc: "Workplace culture transformation, compensation benchmarking, performance management frameworks, and organizational design.",
-      badge: "Strategic",
+      title: "Candidate Readiness & Hiring Advisory",
+      shortDesc: "Interview frameworks, early retention support, Sri Lankan salary benchmarking, and workplace soft-skills coaching.",
+      badge: "Hiring Advisory",
       icon: "ShieldCheck",
       anchor: "/services#consultancy",
     },

@@ -32,13 +32,14 @@ export function ConsultancyGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <Badge variant="teal">Strategic Advisory</Badge>
+          <Badge variant="teal">Hiring Advisory</Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-950 dark:text-white font-heading tracking-tight">
-            Specialized HR Consultancy
+            Candidate Readiness &amp; Hiring Advisory
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            Targeted advisory practices engineered to accelerate business performance,
-            mitigate employment risks, and build resilient leadership teams.
+            Bridging the gap between talent acquisition and day-one performance. Beyond sourcing
+            the right candidates, we equip growing businesses with practical hiring insights and
+            candidate preparation.
           </p>
         </div>
 

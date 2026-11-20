@@ -197,7 +197,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/services#consultancy" className="hover:text-teal-400 transition-colors">
-                  HR Consultancy
+                  Hiring Advisory
                 </Link>
               </li>
               <li>

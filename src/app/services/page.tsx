@@ -18,9 +18,9 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "HR Services & Solutions | Executive Search & Staff Augmentation",
+  title: "Recruitment & Talent Services | Prime Talents Solutions",
   description:
-    "Explore Prime Talents Solutions full suite of workforce capabilities in Sri Lanka: Executive Search (#recruitment), Staff Augmentation (#outsourcing), Corporate Training (#training), and Strategic Consultancy (#consultancy).",
+    "Explore Prime Talents Solutions full suite of workforce capabilities in Sri Lanka: Talent Sourcing (#recruitment), Job Portal (#job-portal), End-to-End Recruitment (#recruitment-solutions), Staff Augmentation (#staffing), and Hiring Advisory (#consultancy).",
 };
 
 export default function ServicesPage() {
@@ -67,7 +67,7 @@ export default function ServicesPage() {
             href="#consultancy"
             className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
           >
-            HR Consultancy
+            Hiring Advisory
           </a>
         </div>
       </section>
@@ -326,57 +326,101 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Anchor 5: HR Consultancy */}
+      {/* Anchor 5: Candidate Readiness & Hiring Advisory */}
       <section id="consultancy" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-12 md:p-16 rounded-3xl bg-slate-50 dark:bg-navy-900 border border-slate-200/80 dark:border-navy-800 space-y-10">
           <div className="max-w-3xl space-y-4">
             <Badge variant="teal">Advisory Practice</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-              HR Consultancy &amp; Workforce Architecture
+              Candidate Readiness &amp; Hiring Advisory
             </h2>
+            <p className="text-base font-semibold text-teal-700 dark:text-teal-400">
+              Bridging the gap between talent acquisition and day-one performance.
+            </p>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              We guide executive boards, private equity firms, and HR directors
-              through restructuring, compensation benchmarking, performance management
-              system rollouts, and industrial relations disputes.
+              Beyond sourcing the right candidates, we equip growing businesses with practical hiring
+              insights and candidate preparation—ensuring your new hires integrate smoothly, adapt to
+              your culture, and stay longer.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="p-6 space-y-3 bg-white dark:bg-navy-950 border-slate-200 dark:border-navy-800">
-              <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
-                HR Due Diligence &amp; Audit
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Review existing employment contracts, leave policies, and statutory
-                records to identify hidden legal risks prior to funding or audits.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="p-6 space-y-3 bg-white dark:bg-navy-950 border-slate-200 dark:border-navy-800 flex flex-col justify-between hover:shadow-lg hover:border-teal-500/40 transition-all duration-300">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-900 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold">
+                  01
+                </div>
+                <h3 className="font-heading font-bold text-base text-navy-950 dark:text-white">
+                  Interview &amp; Assessment Frameworks
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Custom interview guides and behavioral screening to help your managers pick the best cultural fit.
+                </p>
+              </div>
+              <div className="pt-2 text-[11px] font-semibold text-teal-600 dark:text-teal-400">
+                High-Accuracy Selection
+              </div>
             </Card>
 
-            <Card className="p-6 space-y-3 bg-white dark:bg-navy-950 border-slate-200 dark:border-navy-800">
-              <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
-                Compensation Benchmarking
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Real-time empirical salary surveys across Colombo tech, apparel,
-                banking, and shared services to design competitive wage bands.
-              </p>
+            <Card className="p-6 space-y-3 bg-white dark:bg-navy-950 border-slate-200 dark:border-navy-800 flex flex-col justify-between hover:shadow-lg hover:border-teal-500/40 transition-all duration-300">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-900 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold">
+                  02
+                </div>
+                <h3 className="font-heading font-bold text-base text-navy-950 dark:text-white">
+                  Early Retention &amp; Integration Support
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Post-offer engagement and structured orientation guidance to prevent early drop-offs and accelerate onboarding.
+                </p>
+              </div>
+              <div className="pt-2 text-[11px] font-semibold text-teal-600 dark:text-teal-400">
+                Reduced Drop-Offs
+              </div>
             </Card>
 
-            <Card className="p-6 space-y-3 bg-white dark:bg-navy-950 border-slate-200 dark:border-navy-800">
-              <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
-                Industrial Relations &amp; TEWA
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Expert navigation of the Termination of Employment of Workmen Act
-                (TEWA), certified dispute mediation, and union negotiations.
-              </p>
+            <Card className="p-6 space-y-3 bg-white dark:bg-navy-950 border-slate-200 dark:border-navy-800 flex flex-col justify-between hover:shadow-lg hover:border-teal-500/40 transition-all duration-300">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-900 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold">
+                  03
+                </div>
+                <h3 className="font-heading font-bold text-base text-navy-950 dark:text-white">
+                  Sri Lankan Market &amp; Salary Benchmarking
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Up-to-date insights on local salary trends, talent availability, and role expectations across Sri Lankan sectors.
+                </p>
+              </div>
+              <div className="pt-2 text-[11px] font-semibold text-teal-600 dark:text-teal-400">
+                Competitive Compensation
+              </div>
+            </Card>
+
+            <Card className="p-6 space-y-3 bg-white dark:bg-navy-950 border-slate-200 dark:border-navy-800 flex flex-col justify-between hover:shadow-lg hover:border-teal-500/40 transition-all duration-300">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-900 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold">
+                  04
+                </div>
+                <h3 className="font-heading font-bold text-base text-navy-950 dark:text-white">
+                  Workplace Readiness &amp; Soft-Skills Coaching
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Tailored communication and professional etiquette coaching for candidates prior to joining for immediate impact.
+                </p>
+              </div>
+              <div className="pt-2 text-[11px] font-semibold text-teal-600 dark:text-teal-400">
+                Day-One Readiness
+              </div>
             </Card>
           </div>
 
-          <div className="pt-4 text-center">
+          <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-200/80 dark:border-navy-800">
+            <p className="text-sm text-slate-500 dark:text-slate-400 text-center sm:text-left">
+              Need tailored guidance for your hiring strategy?
+            </p>
             <Link href="/appointment">
               <Button variant="accent" size="lg" className="font-bold">
-                <span>Book an HR Advisory Consultation</span>
+                <span>Book an Advisory Consultation</span>
                 <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
             </Link>
