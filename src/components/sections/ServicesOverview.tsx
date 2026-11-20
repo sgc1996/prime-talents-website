@@ -34,7 +34,7 @@ const MAIN_SERVICES = [
     category: "For Job Seekers & Employers",
     tagline: "Connecting ambitious Sri Lankan professionals with market-leading careers.",
     description:
-      "A modern career hub where professionals access verified vacancies across IT, banking, manufacturing, apparel, and multinational shared services. Employers gain direct access to a pre-screened pool of 25,000+ active candidates.",
+      "A modern career hub where professionals access verified vacancies across IT, banking, manufacturing, apparel, and multinational shared services. Employers gain direct access to a pre-screened pool of verified active candidates.",
     points: [
       "Curated listings for high-growth tech and corporate roles",
       "Intelligent CV parsing and skill-matching algorithms",

@@ -89,7 +89,7 @@ const MILESTONES = [
   {
     year: "2024",
     title: "Prime Talents Digital Career Gateway",
-    desc: "Launched our centralized job portal connecting 25,000+ vetted candidates directly with verified opportunities.",
+    desc: "Launched our centralized job portal connecting vetted candidates directly with verified opportunities.",
   },
 ];
 
