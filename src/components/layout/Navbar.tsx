@@ -96,7 +96,7 @@ export function Navbar() {
                 {siteConfig.name}
               </span>
               <span className="text-[10px] uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">
-                Workforce Solutions • Colombo
+                Workforce &amp; HR Solutions • Sri Lanka
               </span>
             </div>
           </Link>
