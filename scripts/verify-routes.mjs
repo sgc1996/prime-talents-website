@@ -66,7 +66,7 @@ async function run() {
       body: JSON.stringify({
         fullName: "Test Executive",
         email: "test@enterprise.lk",
-        phone: "+94 77 123 4567",
+        phone: "+94 76 695 5021",
         company: "Test Enterprise PLC",
         service: "Executive Search",
         companySize: "51-250",

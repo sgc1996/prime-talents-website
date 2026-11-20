@@ -7,10 +7,10 @@ export const siteConfig = {
     "Sri Lanka's trusted partner for executive search, talent acquisition, corporate training, and strategic workforce consultancy.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://primetalentssolutions.lk",
   jobPortalUrl: process.env.NEXT_PUBLIC_JOB_PORTAL_URL || "https://jobs.primetalentssolutions.lk",
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+94771234567",
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+94766955021",
   contact: {
-    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || "+94 11 234 5678",
-    hotline: "+94 77 123 4567",
+    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || "+94 76 695 5021",
+    hotline: "+94 76 695 5021",
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "info@primetalentssolutions.lk",
     recruitmentEmail: "careers@primetalentssolutions.lk",
     clientEmail: "solutions@primetalentssolutions.lk",

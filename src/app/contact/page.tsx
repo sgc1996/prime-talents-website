@@ -88,7 +88,7 @@ export default function ContactPage() {
                   <Phone className="w-5 h-5 text-teal-600 dark:text-teal-400 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-navy-950 dark:text-white">
-                      Direct Telephone
+                      Direct Telephone &amp; WhatsApp
                     </strong>
                     <a
                       href={`tel:${siteConfig.contact.phone.replace(/\s+/g, "")}`}
@@ -97,7 +97,7 @@ export default function ContactPage() {
                       {siteConfig.contact.phone}
                     </a>
                     <span className="block text-xs text-slate-400 mt-0.5">
-                      Hotline: {siteConfig.contact.hotline}
+                      Hotline &amp; WhatsApp: {siteConfig.contact.hotline}
                     </span>
                   </div>
                 </div>

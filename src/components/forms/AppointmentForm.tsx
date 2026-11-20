@@ -150,7 +150,7 @@ export function AppointmentForm() {
         <Input
           id="phone"
           label="Phone Number (with Country Code) *"
-          placeholder="+94 77 123 4567"
+          placeholder="+94 76 695 5021"
           error={errors.phone?.message}
           {...register("phone")}
         />

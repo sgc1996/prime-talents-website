@@ -134,7 +134,7 @@ export function ContactForm() {
         <Input
           id="contactPhone"
           label="Contact Number *"
-          placeholder="+94 77 123 4567"
+          placeholder="+94 76 695 5021"
           error={errors.phone?.message}
           {...register("phone")}
         />

@@ -79,8 +79,8 @@ NEXT_PUBLIC_BRAND_NAME="Prime Talents Solutions"
 NEXT_PUBLIC_JOB_PORTAL_URL=https://jobs.primetalents.lk
 
 # Direct Contact
-NEXT_PUBLIC_WHATSAPP_NUMBER=+94771234567
-NEXT_PUBLIC_CONTACT_PHONE="+94 11 234 5678"
+NEXT_PUBLIC_WHATSAPP_NUMBER=+94766955021
+NEXT_PUBLIC_CONTACT_PHONE="+94 76 695 5021"
 NEXT_PUBLIC_CONTACT_EMAIL=info@primetalents.lk
 
 # Email Dispatch Provider ('resend', 'nodemailer', or 'mock')

@@ -139,7 +139,7 @@ export function EventRegisterForm({
         <Input
           id="eventPhone"
           label="Phone Number *"
-          placeholder="+94 77 123 4567"
+          placeholder="+94 76 695 5021"
           error={errors.phone?.message}
           {...register("phone")}
         />
