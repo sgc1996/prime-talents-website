@@ -38,7 +38,7 @@ const MAIN_SERVICES = [
     points: [
       "Curated listings for high-growth tech and corporate roles",
       "Intelligent CV parsing and skill-matching algorithms",
-      "Transparent salary ranges (including USD-pegged positions)",
+      "Transparent salary ranges and clear role expectations",
       "Direct interview scheduling and career advisory",
     ],
     image: "/images/services/job-portal.svg",

@@ -142,14 +142,14 @@ export default function ServicesPage() {
             </h2>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
               We empower ambitious Sri Lankan specialists with direct access to vetted,
-              verified positions across Sri Lanka, the Middle East, and remote global
-              tech enterprises. Enjoy transparent salary bands, fast application tracking,
+              verified positions across Sri Lanka&apos;s leading enterprises and growing businesses.
+              Enjoy transparent salary bands, fast application tracking,
               and interview preparation resources.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>USD-Pegged Remote Vacancies</span>
+                <span>Transparent Salary Bands</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
