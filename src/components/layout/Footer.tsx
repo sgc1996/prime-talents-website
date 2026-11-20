@@ -75,9 +75,7 @@ export function Footer() {
             </Link>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-              Sri Lanka&apos;s outcome-focused human capital consultancy. We bridge
-              enterprises with exceptional executive talent, specialized staffing,
-              and strategic workforce solutions.
+              Practical recruitment and talent solutions in Sri Lanka. We help growing and international teams hire reliable talent—from full-time roles to contract projects.
             </p>
 
             <div className="pt-2">
@@ -171,11 +169,6 @@ export function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="/services#recruitment" className="hover:text-teal-400 transition-colors">
-                  Executive Search
-                </Link>
-              </li>
-              <li>
                 <a
                   href={siteConfig.jobPortalUrl}
                   target="_blank"
@@ -197,12 +190,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/services#consultancy" className="hover:text-teal-400 transition-colors">
-                  Hiring Advisory
+                  Candidate Readiness &amp; Advisory
                 </Link>
               </li>
               <li>
                 <Link href="/faq" className="hover:text-teal-400 transition-colors">
-                  FAQ & Guidance
+                  FAQ &amp; Guidance
                 </Link>
               </li>
             </ul>
