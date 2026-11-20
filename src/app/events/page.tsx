@@ -41,7 +41,7 @@ const UPCOMING_EVENTS: EventItem[] = [
     title: "Navigating Sri Lanka Labour Law Reforms & Disciplinary Inquiries",
     date: "March 20, 2025",
     time: "09:00 AM – 04:30 PM (IST)",
-    location: "World Trade Center, West Tower (Level 14), Colombo 01",
+    location: "Colombo, Sri Lanka",
     type: "In-Person Masterclass",
     fee: "LKR 18,500 / Attendee (Inclusive of Materials & Lunch)",
     speaker: {

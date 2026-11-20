@@ -17,7 +17,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us | Colombo Head Office & Inquiries",
   description:
-    "Get in touch with Prime Talents Solutions Pvt Ltd at our World Trade Center Colombo office. Reach our executive search, staffing, and candidate support teams.",
+    "Get in touch with Prime Talents Solutions (Pvt) Ltd. Reach our recruitment, staffing, and candidate support teams in Colombo, Sri Lanka.",
 };
 
 export default function ContactPage() {
@@ -64,7 +64,7 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-6">
             <Card className="p-8 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 shadow-sm space-y-6">
               <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
-                Colombo Head Office
+                Colombo Office
               </h3>
 
               <div className="space-y-4 text-sm text-slate-600 dark:text-slate-300">
@@ -72,14 +72,10 @@ export default function ContactPage() {
                   <MapPin className="w-5 h-5 text-teal-600 dark:text-teal-400 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-navy-950 dark:text-white">
-                      Physical Location
+                      Location
                     </strong>
                     <span>
-                      {siteConfig.contact.address.line1},{" "}
-                      {siteConfig.contact.address.line2},{" "}
-                      {siteConfig.contact.address.city}{" "}
-                      {siteConfig.contact.address.postalCode},{" "}
-                      {siteConfig.contact.address.country}
+                      Colombo, Sri Lanka
                     </span>
                   </div>
                 </div>
@@ -156,27 +152,27 @@ export default function ContactPage() {
               </div>
             </Card>
 
-            {/* Interactive Styled Colombo WTC Map Graphic */}
+            {/* Styled Colombo Location Graphic */}
             <Card className="overflow-hidden border-slate-200 dark:border-navy-800 bg-slate-100 dark:bg-navy-900 shadow-sm">
               <div className="p-4 bg-navy-950 text-white flex items-center justify-between text-xs">
                 <span className="flex items-center gap-1.5 font-bold">
                   <Building2 className="w-4 h-4 text-teal-400" />
-                  World Trade Center Colombo (Fort)
+                  Colombo, Sri Lanka
                 </span>
-                <span className="text-teal-400 font-mono text-[10px]">6.9333° N, 79.8433° E</span>
+                <span className="text-teal-400 font-mono text-[10px]">6.9271° N, 79.8612° E</span>
               </div>
               <div className="relative h-48 w-full bg-slate-200 dark:bg-navy-950 flex flex-col items-center justify-center text-center p-6 space-y-2">
                 <div className="w-10 h-10 rounded-full bg-teal-500/20 text-teal-600 dark:text-teal-400 flex items-center justify-center animate-bounce">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <h4 className="font-heading font-bold text-sm text-navy-950 dark:text-white">
-                  Prime Talents Solutions Executive Office
+                  Prime Talents Solutions (Pvt) Ltd
                 </h4>
                 <p className="text-xs text-slate-500 dark:text-slate-400 max-w-xs">
-                  Level 14, West Tower, World Trade Center, Colombo 01, Sri Lanka
+                  Colombo, Sri Lanka
                 </p>
                 <a
-                  href="https://maps.google.com/?q=World+Trade+Center+Colombo"
+                  href="https://maps.google.com/?q=Colombo,+Sri+Lanka"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[11px] font-bold text-teal-600 dark:text-teal-400 hover:underline pt-1"

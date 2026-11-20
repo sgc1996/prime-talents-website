@@ -144,7 +144,7 @@ export default function PrivacyPolicyPage() {
               <strong>Data Protection Officer</strong>
             </p>
             <p>{siteConfig.legalName}</p>
-            <p>Level 14, West Tower, World Trade Center, Colombo 01, Sri Lanka</p>
+            <p>Colombo, Sri Lanka</p>
             <p>
               Email:{" "}
               <a href="mailto:privacy@primetalentssolutions.lk" className="text-teal-600 hover:underline">

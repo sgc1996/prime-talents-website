@@ -138,7 +138,7 @@ export default function AppointmentPage() {
                 <div className="flex items-start gap-2 pt-1">
                   <MapPin className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
                   <span>
-                    Level 14, West Tower, World Trade Center, Echelon Square, Colombo 01
+                    Colombo, Sri Lanka
                   </span>
                 </div>
               </div>

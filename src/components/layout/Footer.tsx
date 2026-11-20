@@ -204,15 +204,13 @@ export function Footer() {
           {/* Column 4: Colombo Head Office & Newsletter */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">
-              Colombo Head Office
+              Colombo Office
             </h4>
             <div className="space-y-2.5 text-xs text-slate-400">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
                 <span>
-                  {siteConfig.contact.address.line1}, {siteConfig.contact.address.line2},{" "}
-                  {siteConfig.contact.address.city} {siteConfig.contact.address.postalCode},{" "}
-                  {siteConfig.contact.address.country}
+                  Colombo, Sri Lanka
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
