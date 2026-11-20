@@ -21,7 +21,7 @@ const MAIN_SERVICES = [
     points: [
       "Role-focused sourcing aligned with your team requirements and timeline",
       "Pre-screened & verified candidates with thorough background and reference checks",
-      "Within 72 hours shortlist turnaround to keep your hiring pipeline moving",
+      "3–5 business days shortlist turnaround to keep your hiring pipeline moving",
       "Flexible 90-day replacement guarantee for complete peace of mind",
     ],
     image: "/images/services/recruitment.svg",

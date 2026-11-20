@@ -100,7 +100,7 @@ export default function ServicesPage() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Within 72 Hours Shortlist Turnaround</span>
+                <span>3–5 Business Days Shortlist Turnaround</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />

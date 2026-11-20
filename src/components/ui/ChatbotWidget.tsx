@@ -35,7 +35,7 @@ const CANNED_QUESTIONS = [
   },
   {
     q: "What is your typical placement turnaround time?",
-    a: "For standard technical and managerial positions, our consultants present a curated shortlist within 72 hours. From brief to final offer typically takes 10 to 14 business days.",
+    a: "For standard technical and managerial positions, our consultants present a curated shortlist within 3–5 business days. From brief to final offer typically takes 10 to 14 business days.",
     link: "/appointment",
     linkLabel: "Request Talent Today",
   },

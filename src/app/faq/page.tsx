@@ -18,7 +18,7 @@ const FAQ_DATA: FAQItem[] = [
   {
     category: "employers",
     q: "How does your executive search and recruitment process work?",
-    a: "We begin with a strategic discovery session to profile your role, company culture, compensation parameters, and ideal candidate persona. Our consultants tap into passive talent networks across Sri Lanka and regional hubs, conduct behavioral and competency vetting, and present a curated shortlist within 72 hours.",
+    a: "We begin with a strategic discovery session to profile your role, company culture, compensation parameters, and ideal candidate persona. Our consultants tap into passive talent networks across Sri Lanka and regional hubs, conduct behavioral and competency vetting, and present a curated shortlist within 3–5 business days.",
   },
   {
     category: "employers",
