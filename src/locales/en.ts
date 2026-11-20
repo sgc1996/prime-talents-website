@@ -12,10 +12,10 @@ export const en = {
     visitJobPortal: "Visit Job Portal",
   },
   hero: {
-    badge: "Trusted HR & Executive Search Partner in Sri Lanka",
-    title: "Looking for Exceptional Talent to Scale Your Enterprise?",
+    badge: "PRACTICAL RECRUITMENT & TALENT PARTNER IN SRI LANKA",
+    title: "Hire Reliable Talent in Sri Lanka Faster",
     subtitle:
-      "We connect visionary organizations with high-impact professionals, flexible contract staffing, and strategic talent solutions across Sri Lanka.",
+      "We help growing businesses and international teams source, vet, and onboard skilled Sri Lankan talent—for permanent roles, contract projects, and remote teams.",
     ctaPrimary: "Book an Appointment",
     ctaSecondary: "Visit Job Portal",
     statClients: "150+ Enterprise Clients",

@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ExternalLink, Sparkles } from "lucide-react";
+import { ArrowRight, ExternalLink, Sparkles, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
@@ -23,19 +23,17 @@ export function HeroSection() {
             {/* Pill Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 dark:bg-teal-950/60 border border-teal-200/80 dark:border-teal-800 text-teal-800 dark:text-teal-300 text-xs font-semibold tracking-wide shadow-xs">
               <Sparkles className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
-              <span>Sri Lanka&apos;s Leading Talent &amp; HR Consultancy</span>
+              <span>PRACTICAL RECRUITMENT &amp; TALENT PARTNER IN SRI LANKA</span>
             </div>
 
-            {/* Original Rewritten Headline */}
+            {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy-950 dark:text-white font-heading tracking-tight leading-[1.12]">
-              Looking for Exceptional Talent to Scale Your Vision?
+              Hire Reliable Talent in Sri Lanka Faster
             </h1>
 
-            {/* Outcome-focused Subtext */}
+            {/* Outcome-focused Subtitle */}
             <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              We bridge ambitious enterprises with vetted executive leaders,
-              specialized professionals, and reliable talent solutions across Colombo
-              and island-wide Sri Lanka.
+              We help growing businesses and international teams source, vet, and onboard skilled Sri Lankan talent—for permanent roles, contract projects, and remote teams.
             </p>
 
             {/* CTA Buttons */}
@@ -60,19 +58,19 @@ export function HeroSection() {
               </a>
             </div>
 
-            {/* Trust Signals */}
+            {/* Bottom Trust Strip */}
             <div className="pt-6 border-t border-slate-200/80 dark:border-navy-800 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 dark:text-slate-400">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-500" />
-                <span>Verified Local Talent Pool</span>
+                <span>Verified Local Talent</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-500" />
-                <span>72-Hour Candidate Shortlists</span>
+                <span>3–5 Day Shortlists</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-500" />
-                <span>90-Day Placement Warranty</span>
+                <span>90-Day Replacement Guarantee</span>
               </div>
             </div>
           </div>
@@ -80,6 +78,22 @@ export function HeroSection() {
           {/* Right Visual Column (5 cols) */}
           <div className="lg:col-span-5 relative flex justify-center">
             <div className="relative w-full max-w-md lg:max-w-none">
+              {/* Top-Right Floating Card: End-to-End Support */}
+              <div className="absolute -top-5 -right-3 sm:-right-6 bg-white dark:bg-navy-900 border border-slate-200/90 dark:border-navy-800 rounded-2xl p-3 sm:p-3.5 shadow-xl hidden sm:flex items-center gap-3 z-10">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
+                  <CheckCircle2 className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-navy-950 dark:text-white font-heading leading-tight">
+                    End-to-End Support
+                  </p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                    Sourcing to smooth onboarding
+                  </p>
+                </div>
+              </div>
+
+              {/* Main Visual Image Card */}
               <div className="relative rounded-3xl overflow-hidden border border-slate-200/80 dark:border-navy-800 shadow-2xl bg-white dark:bg-navy-900 p-2">
                 <Image
                   src="/images/hero-abstract.svg"
@@ -91,17 +105,17 @@ export function HeroSection() {
                 />
               </div>
 
-              {/* Floating Stat Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-4 shadow-xl hidden sm:flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold text-lg">
-                  ✓
+              {/* Bottom-Left Floating Card: 90-Day Guarantee */}
+              <div className="absolute -bottom-6 -left-3 sm:-left-6 bg-white dark:bg-navy-900 border border-slate-200/90 dark:border-navy-800 rounded-2xl p-3 sm:p-3.5 shadow-xl hidden sm:flex items-center gap-3 z-10">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                    Placements Delivered
+                  <p className="text-sm font-bold text-navy-950 dark:text-white font-heading leading-tight">
+                    90-Day Guarantee
                   </p>
-                  <p className="text-lg font-bold text-navy-950 dark:text-white font-heading">
-                    3,200+ Professionals
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                    Replacement protection included
                   </p>
                 </div>
               </div>
@@ -112,4 +126,3 @@ export function HeroSection() {
     </section>
   );
 }
-
