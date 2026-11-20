@@ -63,9 +63,9 @@ export const siteConfig = {
     },
     {
       id: "outsourcing",
-      title: "Staff Augmentation & Contract Staffing",
-      shortDesc: "Flexible staff augmentation, skilled contract personnel, and project-based team deployment.",
-      badge: "Flexible Staffing",
+      title: "End-to-End Recruitment & Talent Solutions",
+      shortDesc: "Complete permanent hiring lifecycle from targeted sourcing and rigorous vetting to seamless onboarding.",
+      badge: "Core Service",
       icon: "Users",
       anchor: "/services#outsourcing",
     },

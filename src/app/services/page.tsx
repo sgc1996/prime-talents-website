@@ -55,7 +55,7 @@ export default function ServicesPage() {
             href="#outsourcing"
             className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
           >
-            Staff Augmentation
+            End-to-End Recruitment
           </a>
           <a
             href="#training"
@@ -191,44 +191,56 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Anchor 3: Staff Augmentation & Contract Staffing */}
+      {/* Anchor 3: End-to-End Recruitment & Talent Solutions */}
       <section id="outsourcing" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-wider">
               <Users className="w-4 h-4" />
-              <span>Staff Augmentation</span>
+              <span>Full-Lifecycle Recruitment</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-              Flexible Staff Augmentation &amp; Contract Talent
+              End-to-End Recruitment &amp; Talent Solutions
             </h2>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Scale your operational and technical teams with pre-screened professionals
-              tailored to your project deliverables. We manage candidate sourcing, credential
-              verification, and seamless placement so you can accelerate your business objectives.
+            <p className="text-sm font-semibold text-teal-700 dark:text-teal-400">
+              Build and scale your core team in Sri Lanka faster, without the internal hiring bottleneck.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Rapid Talent Sourcing &amp; Deployment</span>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              Whether you are a growing local business or an international company
+              establishing a long-term presence, our dedicated recruitment team manages
+              the entire permanent hiring lifecycle—from sourcing to onboarding—so you
+              can focus on your core operations.
+            </p>
+            <div className="grid grid-cols-1 gap-3.5 text-sm text-slate-700 dark:text-slate-300">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Targeted Talent Sourcing:</strong> Finding pre-vetted, high-caliber candidates for permanent roles across key industries.
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Specialized Tech &amp; Corporate Roles</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Customized Hiring Support:</strong> Tailored recruitment strategies for executive, mid-level, and operational positions.
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Interview-Ready Candidate Shortlists</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Thorough Screening &amp; Reference Checks:</strong> Structured interviews and verified background checks before shortlisting.
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Flexible Contract Durations</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Seamless Onboarding Coordination:</strong> Smooth offer management and joining support for a great candidate experience.
+                </span>
               </div>
             </div>
             <div className="pt-2">
               <Link href="/appointment">
                 <Button variant="accent" className="font-bold">
-                  Inquire About Staff Augmentation
+                  Start Permanent Hiring
                 </Button>
               </Link>
             </div>
@@ -237,7 +249,7 @@ export default function ServicesPage() {
             <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-xl bg-slate-50 dark:bg-navy-950 p-2">
               <Image
                 src="/images/services/outsourcing.svg"
-                alt="Staff Augmentation Sri Lanka"
+                alt="End-to-End Recruitment Solutions Sri Lanka"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-2xl"
