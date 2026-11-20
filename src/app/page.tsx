@@ -1,7 +1,6 @@
 import React from "react";
 import { getAllPosts } from "@/lib/blog";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { ClientMarquee } from "@/components/sections/ClientMarquee";
 import { StatsCounter } from "@/components/sections/StatsCounter";
 import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import { ConsultancyGrid } from "@/components/sections/ConsultancyGrid";
@@ -19,10 +18,7 @@ export default function HomePage() {
       {/* 2. Hero Section */}
       <HeroSection />
 
-      {/* 3. Trusted-by Logo Marquee */}
-      <ClientMarquee />
-
-      {/* 4. Animated Stats Counters with SSR Fallback */}
+      {/* 3. Value Metrics: 4 Core Stat Cards */}
       <StatsCounter />
 
       {/* 5. Services Overview: 4 Alternating Blocks */}
