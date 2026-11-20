@@ -43,7 +43,7 @@ export default function ServicesPage() {
             href="#recruitment"
             className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
           >
-            Executive Search
+            Talent Sourcing
           </a>
           <a
             href="#job-portal"
@@ -78,39 +78,39 @@ export default function ServicesPage() {
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-wider">
               <UserCheck className="w-4 h-4" />
-              <span>Executive Search &amp; Headhunting</span>
+              <span>Talent Sourcing &amp; Recruitment</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-              Targeted Recruitment for Mission-Critical Leadership
+              Precision Talent Sourcing &amp; Fast-Track Hiring
             </h2>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              When a bad hire can jeopardize organizational momentum, relying on
-              passive job boards is inadequate. Our executive headhunting team
-              engages discreetly with established industry leaders, assessing
-              cultural fit, strategic capability, and retention longevity.
+              We help growing businesses across Sri Lanka find and hire the right
+              talent—fast. By combining modern sourcing strategies with thorough
+              candidate screening, we take the stress out of hiring so you can focus
+              on scaling your business.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>C-Suite, VP &amp; Director Levels</span>
+                <span>Junior, Mid-Level &amp; Specialist Roles</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Specialized Tech Architects</span>
+                <span>Pre-Screened &amp; Verified Candidates</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>72-Hour Candidate Shortlists</span>
+                <span>Within 72 Hours Shortlist Turnaround</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>90-Day Placement Warranty</span>
+                <span>Flexible 90-Day Replacement Guarantee</span>
               </div>
             </div>
             <div className="pt-2 flex items-center gap-4">
               <Link href="/appointment">
                 <Button variant="accent" className="font-bold">
-                  Request Headhunting Brief
+                  Start Sourcing Talent
                 </Button>
               </Link>
             </div>

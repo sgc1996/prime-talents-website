@@ -47,8 +47,8 @@ export const siteConfig = {
   services: [
     {
       id: "recruitment",
-      title: "Executive Search & Talent Acquisition",
-      shortDesc: "Targeted headhunting and precision recruitment for senior executives, niche tech talent, and specialized operational leaders.",
+      title: "Talent Sourcing & Recruitment",
+      shortDesc: "Targeted sourcing and pre-screened hiring for junior, mid-level, and specialist roles across Sri Lanka.",
       badge: "Core Service",
       icon: "UserCheck",
       anchor: "/services#recruitment",

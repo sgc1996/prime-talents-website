@@ -13,20 +13,20 @@ import { Badge } from "@/components/ui/Badge";
 const MAIN_SERVICES = [
   {
     id: "recruitment",
-    title: "Executive Search & Precision Talent Acquisition",
+    title: "Precision Talent Sourcing & Recruitment",
     category: "Talent Sourcing",
-    tagline: "Unearthing exceptional leaders and technical innovators who drive enterprise outcomes.",
+    tagline: "Fast, reliable hiring tailored for growing businesses across Sri Lanka.",
     description:
-      "Our specialized recruitment consultants combine discreet headhunting networks with rigorous competency benchmarking. We identify, evaluate, and deliver top-tier executives, engineering leads, and functional specialists across Sri Lanka and the Asia-Pacific.",
+      "We help growing businesses across Sri Lanka find and hire the right talent—fast. By combining modern sourcing strategies with thorough candidate screening, we take the stress out of hiring so you can focus on scaling your business.",
     points: [
-      "Targeted headhunting across passive C-Suite & VP talent",
-      "Rigorous technical vetting and competency psychometrics",
-      "72-hour shortlist turnaround with verified reference checks",
-      "Comprehensive 90-day placement replacement guarantee",
+      "Targeted sourcing for junior, mid-level, and specialist roles across key industries",
+      "Pre-screened & verified candidates with thorough background and reference checks",
+      "Within 72 hours shortlist turnaround to keep your hiring pipeline moving",
+      "Flexible 90-day replacement guarantee for complete peace of mind",
     ],
     image: "/images/services/recruitment.svg",
     link: "/services#recruitment",
-    buttonLabel: "Explore Executive Search",
+    buttonLabel: "Explore Talent Sourcing",
   },
   {
     id: "job-portal",
