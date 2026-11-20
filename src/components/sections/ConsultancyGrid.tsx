@@ -5,24 +5,24 @@ import {
   UserSearch,
   TrendingUp,
   HeartHandshake,
-  Globe,
-  Sparkles,
+  Layers,
+  Clock,
   ShieldCheck,
   Scale,
   ArrowRight,
 } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
 import { Badge } from "@/components/ui/Badge";
-import { Card, CardContent } from "@/components/ui/Card";
+import { Card } from "@/components/ui/Card";
 
 const ICON_MAP = {
   Compass: Compass,
   UserSearch: UserSearch,
   TrendingUp: TrendingUp,
   HeartHandshake: HeartHandshake,
-  Globe: Globe,
-  Sparkles: Sparkles,
-  ShieldAlert: ShieldCheck,
+  Layers: Layers,
+  Clock: Clock,
+  ShieldCheck: ShieldCheck,
   Scale: Scale,
 };
 
@@ -32,14 +32,14 @@ export function ConsultancyGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <Badge variant="teal">Hiring Advisory</Badge>
+          <Badge variant="teal">Our Recruitment Capabilities</Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-950 dark:text-white font-heading tracking-tight">
-            Candidate Readiness &amp; Hiring Advisory
+            End-to-End Hiring Built for Speed, Quality &amp; Reliability
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            Bridging the gap between talent acquisition and day-one performance. Beyond sourcing
-            the right candidates, we equip growing businesses with practical hiring insights and
-            candidate preparation.
+            From targeted sourcing and strict vetting to interview coordination and
+            placement guarantees, we handle every stage of recruitment so you can build
+            high-performing teams with confidence.
           </p>
         </div>
 
