@@ -248,7 +248,7 @@ export default function ServicesPage() {
           <div className="lg:col-span-6">
             <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-xl bg-slate-50 dark:bg-navy-950 p-2">
               <Image
-                src="/images/services/outsourcing.svg"
+                src="/images/services/recruitment-lifecycle.svg"
                 alt="End-to-End Recruitment Solutions Sri Lanka"
                 width={600}
                 height={400}

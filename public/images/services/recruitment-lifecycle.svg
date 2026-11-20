@@ -1,0 +1,63 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="24" fill="#0B1F3A"/>
+  <circle cx="500" cy="80" r="150" fill="#14B8A6" fill-opacity="0.12"/>
+  <circle cx="90" cy="320" r="140" fill="#1E3A5F" fill-opacity="0.4"/>
+
+  <!-- Main Pipeline Card -->
+  <rect x="70" y="55" width="460" height="290" rx="20" fill="#071527" stroke="#1E3A5F" stroke-width="2"/>
+
+  <!-- Header Bar -->
+  <rect x="70" y="55" width="460" height="50" rx="20" fill="#0B1F3A" fill-opacity="0.8"/>
+  <circle cx="100" cy="80" r="6" fill="#EF4444" fill-opacity="0.8"/>
+  <circle cx="118" cy="80" r="6" fill="#F59E0B" fill-opacity="0.8"/>
+  <circle cx="136" cy="80" r="6" fill="#10B981" fill-opacity="0.8"/>
+  <text x="300" y="85" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle" letter-spacing="0.5">PERMANENT HIRING LIFECYCLE</text>
+
+  <!-- Step 1: Sourcing -->
+  <g transform="translate(95, 120)">
+    <rect width="160" height="85" rx="12" fill="#0B1F3A" stroke="#14B8A6" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="14" fill="#14B8A6" fill-opacity="0.2"/>
+    <circle cx="28" cy="28" r="6" stroke="#2DD4BF" stroke-width="2"/>
+    <line x1="33" y1="33" x2="38" y2="38" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+    <text x="50" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">1. Talent Sourcing</text>
+    <text x="18" y="56" font-family="system-ui, sans-serif" font-size="9.5" fill="#94A3B8">Pre-vetted professionals</text>
+    <text x="18" y="70" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#2DD4BF">Across Key Industries</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 265 162 L 285 162 M 281 157 L 286 162 L 281 167" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2: Screening -->
+  <g transform="translate(295, 120)">
+    <rect width="210" height="85" rx="12" fill="#0B1F3A" stroke="#1E3A5F" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="14" fill="#3B82F6" fill-opacity="0.2"/>
+    <path d="M 22 28 L 26 32 L 34 24" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="50" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">2. Rigorous Screening</text>
+    <text x="18" y="56" font-family="system-ui, sans-serif" font-size="9.5" fill="#94A3B8">Competency evaluation</text>
+    <text x="18" y="70" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#60A5FA">&amp; Reference Checks</text>
+  </g>
+
+  <!-- Step 3: Shortlisting -->
+  <g transform="translate(95, 225)">
+    <rect width="160" height="85" rx="12" fill="#0B1F3A" stroke="#1E3A5F" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="14" fill="#F59E0B" fill-opacity="0.2"/>
+    <circle cx="28" cy="25" r="5" stroke="#FBBF24" stroke-width="1.5"/>
+    <path d="M 20 35 C 20 31 24 30 28 30 C 32 30 36 31 36 35" stroke="#FBBF24" stroke-width="1.5"/>
+    <text x="50" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">3. Shortlist Delivery</text>
+    <text x="18" y="56" font-family="system-ui, sans-serif" font-size="9.5" fill="#94A3B8">Curated match in 72h</text>
+    <text x="18" y="70" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#FBBF24">Interview Coordination</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M 265 267 L 285 267 M 281 262 L 286 267 L 281 272" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 4: Onboarding & Placement -->
+  <g transform="translate(295, 225)">
+    <rect width="210" height="85" rx="12" fill="#0B1F3A" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="14" fill="#10B981" fill-opacity="0.2"/>
+    <path d="M 22 28 L 26 32 L 34 24" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="50" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">4. Onboarding &amp; Joining</text>
+    <text x="18" y="56" font-family="system-ui, sans-serif" font-size="9.5" fill="#94A3B8">Smooth offer management</text>
+    <text x="18" y="70" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#34D399">90-Day Replacement Guarantee</text>
+  </g>
+</svg>

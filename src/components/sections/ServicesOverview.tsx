@@ -59,7 +59,7 @@ const MAIN_SERVICES = [
       "Thorough Screening & Reference Checks: Structured interviews and verified background checks before shortlisting",
       "Seamless Onboarding Coordination: Smooth offer management and joining support for a great candidate experience",
     ],
-    image: "/images/services/outsourcing.svg",
+    image: "/images/services/recruitment-lifecycle.svg",
     link: "/services#outsourcing",
     buttonLabel: "Explore Recruitment Solutions",
   },
