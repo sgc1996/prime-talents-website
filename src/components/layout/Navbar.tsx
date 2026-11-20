@@ -11,7 +11,7 @@ import {
   X,
   ExternalLink,
   ChevronRight,
-  ShieldCheck,
+  Clock,
 } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
 import { ThemeToggle } from "./ThemeToggle";
@@ -59,11 +59,11 @@ export function Navbar() {
           </div>
           <div className="flex items-center gap-4 text-slate-400">
             <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-teal-400" />
-              Department of Labour Accredited (Sri Lanka)
+              <Clock className="w-3.5 h-3.5 text-teal-400" />
+              <span>{siteConfig.contact.hours}</span>
             </span>
             <span className="text-slate-600">|</span>
-            <span>{siteConfig.contact.hours}</span>
+            <span>Colombo, Sri Lanka</span>
           </div>
         </div>
       </div>

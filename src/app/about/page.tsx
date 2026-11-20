@@ -20,7 +20,7 @@ import { Card } from "@/components/ui/Card";
 export const metadata: Metadata = {
   title: "About Us | Sri Lanka's Trusted Talent & HR Consultancy",
   description:
-    "Learn about Prime Talents Solutions Pvt Ltd, our journey in Colombo, our leadership, core values, and accredited workforce solutions.",
+    "Learn about Prime Talents Solutions Pvt Ltd, our journey in Colombo, our leadership, core values, and trusted workforce solutions.",
 };
 
 const LEADERSHIP_TEAM = [
