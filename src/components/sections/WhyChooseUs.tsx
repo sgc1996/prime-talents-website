@@ -4,7 +4,7 @@ import {
   BookOpen,
   Smile,
   Target,
-  Users2,
+  ShieldCheck,
   Handshake,
 } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
@@ -15,7 +15,7 @@ const ICON_MAP = {
   BookOpen: BookOpen,
   Smile: Smile,
   Target: Target,
-  Users2: Users2,
+  ShieldCheck: ShieldCheck,
   Handshake: Handshake,
 };
 
@@ -27,11 +27,11 @@ export function WhyChooseUs() {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <Badge variant="teal">Why Prime Talents</Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-950 dark:text-white font-heading tracking-tight">
-            The Advantage of a Strategic Workforce Partner
+            A Practical, Reliable Workforce Partner Built for Real Results
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            We operate not as transactional CV brokers, but as long-term talent
-            architects invested in your enterprise success.
+            We operate not as transactional CV forwarders, but as a committed hiring partner
+            focused on finding the right people for your business—fast.
           </p>
         </div>
 
