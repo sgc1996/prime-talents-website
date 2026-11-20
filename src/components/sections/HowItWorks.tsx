@@ -11,11 +11,11 @@ export function HowItWorks() {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <Badge variant="teal">Proven Methodology</Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-950 dark:text-white font-heading tracking-tight">
-            Our 4-Step Engagement Process
+            Our 4-Step Hiring Process
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            From initial role alignment to post-placement warranty, our systematic
-            lifecycle guarantees quality, transparency, and speed.
+            From initial role alignment to post-placement support, our structured
+            process keeps hiring fast, clear, and reliable.
           </p>
         </div>
 

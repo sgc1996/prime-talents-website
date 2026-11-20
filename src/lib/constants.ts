@@ -171,23 +171,23 @@ export const siteConfig = {
   processSteps: [
     {
       step: "01",
-      title: "Strategic Brief & Discovery",
-      desc: "We analyze your role requirements, team culture, technical criteria, compensation budget, and strategic enterprise objectives.",
+      title: "Role Discovery & Alignment",
+      desc: "We clarify your role requirements, team culture, required skills, and budget so we target the right profile from day one.",
     },
     {
       step: "02",
-      title: "Precision Sourcing & Vetting",
-      desc: "We tap into our vetted database of 25,000+ candidates and conduct discreet market headhunting for passive, top-tier industry talent.",
+      title: "Targeted Sourcing & Outreach",
+      desc: "We source active and passive candidates across relevant channels, screening for practical skills and role fit.",
     },
     {
       step: "03",
-      title: "Rigorous Competency Shortlist",
-      desc: "Candidates complete technical screening, behavioral assessments, and deep reference verifications before you receive the curated shortlist.",
+      title: "Screening & Curated Shortlist",
+      desc: "Candidates go through structured interviews, skill checks, and reference verification before you receive a focused shortlist.",
     },
     {
       step: "04",
-      title: "Placement, Onboarding & Warranty",
-      desc: "We assist with offer negotiation, contract preparation, smooth onboarding, and follow through with our 90-day retention guarantee.",
+      title: "Offer, Onboarding & Guarantee",
+      desc: "We support offer coordination and smooth joining, backed by our 60-day replacement guarantee.",
     },
   ],
 };
