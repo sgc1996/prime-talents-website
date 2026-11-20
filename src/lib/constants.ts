@@ -121,7 +121,7 @@ export const siteConfig = {
       title: "Culture-Fit & Retention Focus",
       desc: "Matching candidates not just for skills, but for attitude and work ethic—helping you keep top performers longer.",
       icon: "HeartHandshake",
-      outcome: "60-day replacement guarantee",
+      outcome: "90-day replacement guarantee",
     },
     {
       title: "Seamless Interview & Offer Management",
@@ -187,7 +187,7 @@ export const siteConfig = {
     {
       step: "04",
       title: "Offer, Onboarding & Guarantee",
-      desc: "We support offer coordination and smooth joining, backed by our 60-day replacement guarantee.",
+      desc: "We support offer coordination and smooth joining, backed by our 90-day replacement guarantee.",
     },
   ],
 };
