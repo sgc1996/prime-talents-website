@@ -93,8 +93,7 @@ export function ServicesOverview() {
             Comprehensive Human Capital Capabilities
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            From strategic executive search and specialized tech placements to tailored
-            staff augmentation and leadership training, we power your organizational growth.
+            Practical hiring, job portal access, permanent recruitment, and contract staffing built for businesses and professionals in Sri Lanka.
           </p>
         </div>
 
