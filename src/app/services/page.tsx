@@ -290,9 +290,9 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="pt-2">
-              <Link href="/events">
+              <Link href="/appointment">
                 <Button variant="accent" className="font-bold">
-                  View Upcoming Workshops
+                  Request a Custom Workshop
                 </Button>
               </Link>
             </div>
