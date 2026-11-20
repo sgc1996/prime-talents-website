@@ -21,7 +21,7 @@ export const siteConfig = {
       postalCode: "00100",
       country: "Sri Lanka",
     },
-    hours: "Monday – Friday: 8:30 AM – 5:30 PM (IST)",
+    hours: "Monday – Saturday: 8:30 AM – 5:30 PM",
   },
   socials: {
     linkedin: "https://www.linkedin.com/company/primetalents",
