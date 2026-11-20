@@ -52,16 +52,16 @@ export default function ServicesPage() {
             Job Seeker Portal
           </a>
           <a
-            href="#outsourcing"
+            href="#recruitment-solutions"
             className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
           >
             End-to-End Recruitment
           </a>
           <a
-            href="#training"
+            href="#staffing"
             className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors shadow-xs"
           >
-            Corporate Training
+            Staff Augmentation
           </a>
           <a
             href="#consultancy"
@@ -192,7 +192,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Anchor 3: End-to-End Recruitment & Talent Solutions */}
-      <section id="outsourcing" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="recruitment-solutions" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-wider">
@@ -259,44 +259,55 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Anchor 4: Training & Development */}
-      <section id="training" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Anchor 4: Staff Augmentation & Contract Staffing */}
+      <section id="staffing" className="scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center lg:grid-flow-dense">
           <div className="lg:col-span-6 lg:col-start-7 space-y-6">
             <div className="flex items-center gap-2 text-teal-600 dark:text-teal-400 text-xs font-bold uppercase tracking-wider">
-              <GraduationCap className="w-4 h-4" />
-              <span>Upskilling &amp; Enablement</span>
+              <Users className="w-4 h-4" />
+              <span>Workforce Scalability</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-              Corporate Training &amp; Executive Coaching
+              Staff Augmentation &amp; Contract Staffing
             </h2>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Equip your leadership and front-line managers with practical tools
-              to drive performance, resolve conflict, and navigate modern industrial
-              relations under Sri Lankan labor laws.
+            <p className="text-sm font-semibold text-teal-700 dark:text-teal-400">
+              Scale project and operational capacity rapidly with pre-vetted temporary professionals.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Executive Emotional Intelligence</span>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              Whether bridging specialized skill gaps for a high-priority tech project or scaling
+              seasonal operational capacity, our flexible contract staffing solutions connect you
+              with verified professionals ready to contribute from day one.
+            </p>
+            <div className="grid grid-cols-1 gap-3.5 text-sm text-slate-700 dark:text-slate-300">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Rapid Deployment:</strong> Immediate access to vetted technical and corporate specialists without long hiring cycles.
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Labor Law &amp; Disciplinary Inquiry</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Flexible Engagement Models:</strong> Choose from project-based, fixed-term contract, or contract-to-hire arrangements.
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>High-Velocity Sales Enablement</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Operational &amp; Attendance Management:</strong> Seamless onboarding along with ongoing attendance and contractor coordination.
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Custom On-Site &amp; Hybrid Cohorts</span>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-navy-950 dark:text-white">Strict Credential Verification:</strong> Comprehensive background screening to ensure reliability and compliance.
+                </span>
               </div>
             </div>
             <div className="pt-2">
               <Link href="/appointment">
                 <Button variant="accent" className="font-bold">
-                  Request a Custom Workshop
+                  Inquire About Contract Staffing
                 </Button>
               </Link>
             </div>
@@ -304,8 +315,8 @@ export default function ServicesPage() {
           <div className="lg:col-span-6 lg:col-start-1">
             <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-xl bg-slate-50 dark:bg-navy-950 p-2">
               <Image
-                src="/images/services/training.svg"
-                alt="Corporate Training Programs"
+                src="/images/services/staff-augmentation.svg"
+                alt="Staff Augmentation and Contract Staffing Sri Lanka"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-2xl"
