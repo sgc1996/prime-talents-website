@@ -215,7 +215,7 @@ export default function ServicesPage() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" />
                 <span>
-                  <strong className="text-navy-950 dark:text-white">Targeted Talent Sourcing:</strong> Finding pre-vetted, high-caliber candidates for permanent roles across key industries.
+                  <strong className="text-navy-950 dark:text-white">Core Team &amp; Long-Term Hiring:</strong> Connecting you with dependable professionals suited for ongoing and core roles.
                 </span>
               </div>
               <div className="flex items-start gap-3">

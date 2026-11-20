@@ -54,7 +54,7 @@ const MAIN_SERVICES = [
     description:
       "Whether you are a growing local business or an international company establishing a long-term presence, our dedicated recruitment team manages the entire permanent hiring lifecycle—from sourcing to onboarding—so you can focus on your core operations.",
     points: [
-      "Targeted Talent Sourcing: Finding pre-vetted, high-caliber candidates for permanent roles across key industries",
+      "Core Team & Long-Term Hiring: Connecting you with dependable professionals suited for ongoing and core roles",
       "Customized Hiring Support: Tailored recruitment strategies for executive, mid-level, and operational positions",
       "Thorough Screening & Reference Checks: Structured interviews and verified background checks before shortlisting",
       "Seamless Onboarding Coordination: Smooth offer management and joining support for a great candidate experience",
