@@ -4,41 +4,23 @@ import React, { useEffect, useState, useRef } from "react";
 import { siteConfig } from "@/lib/constants";
 
 interface StatItemProps {
-  value: number;
-  suffix: string;
+  value: string;
   label: string;
   description: string;
 }
 
-function CounterItem({ value, suffix, label, description }: StatItemProps) {
-  const [count, setCount] = useState(value); // Default to full value for SSR fallback!
-  const [hasAnimated, setHasAnimated] = useState(false);
+function StatCard({ value, label, description }: StatItemProps) {
+  const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Start animation only after client mounts and becomes visible
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-          let start = 0;
-          const duration = 1500;
-          const stepTime = 25;
-          const totalSteps = duration / stepTime;
-          const increment = value / totalSteps;
-
-          const timer = setInterval(() => {
-            start += increment;
-            if (start >= value) {
-              setCount(value);
-              clearInterval(timer);
-            } else {
-              setCount(Math.floor(start));
-            }
-          }, stepTime);
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.15 }
     );
 
     if (elementRef.current) {
@@ -46,23 +28,30 @@ function CounterItem({ value, suffix, label, description }: StatItemProps) {
     }
 
     return () => observer.disconnect();
-  }, [value, hasAnimated]);
+  }, []);
 
   return (
     <div
       ref={elementRef}
-      className="p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200/80 dark:border-navy-800 shadow-sm hover:shadow-lg hover:border-teal-500/40 transition-all duration-300 text-center flex flex-col justify-center items-center"
+      className={`p-7 sm:p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200/80 dark:border-navy-800 shadow-sm hover:shadow-xl hover:border-teal-500/40 hover:-translate-y-1 transition-all duration-300 text-center flex flex-col justify-center items-center group relative overflow-hidden ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-90 translate-y-2"
+      }`}
     >
-      <div className="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-navy-950 dark:text-white mb-2 tracking-tight">
-        <span className="text-teal-600 dark:text-teal-400">
-          {new Intl.NumberFormat("en-US").format(count)}
-        </span>
-        <span className="text-navy-900 dark:text-white">{suffix}</span>
+      {/* Decorative top accent glow on hover */}
+      <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+      {/* Main Metric Value */}
+      <div className="font-heading font-black text-3xl sm:text-4xl lg:text-4xl xl:text-5xl text-teal-600 dark:text-teal-400 mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300">
+        {value}
       </div>
-      <h3 className="font-heading font-bold text-base sm:text-lg text-navy-900 dark:text-slate-100 mb-1">
+
+      {/* Metric Label / Title */}
+      <h3 className="font-heading font-bold text-base sm:text-lg text-navy-950 dark:text-slate-100 mb-1 leading-snug">
         {label}
       </h3>
-      <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+
+      {/* Description */}
+      <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
         {description}
       </p>
     </div>
@@ -70,39 +59,22 @@ function CounterItem({ value, suffix, label, description }: StatItemProps) {
 }
 
 export function StatsCounter() {
-  const { clients, placements, candidates, retention } = siteConfig.metrics;
+  const metrics = siteConfig.metrics;
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50/70 dark:bg-navy-950/70">
+    <section className="py-14 md:py-20 bg-slate-50/70 dark:bg-navy-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          <CounterItem
-            value={clients.value}
-            suffix={clients.suffix}
-            label={clients.label}
-            description={clients.description}
-          />
-          <CounterItem
-            value={placements.value}
-            suffix={placements.suffix}
-            label={placements.label}
-            description={placements.description}
-          />
-          <CounterItem
-            value={candidates.value}
-            suffix={candidates.suffix}
-            label={candidates.label}
-            description={candidates.description}
-          />
-          <CounterItem
-            value={retention.value}
-            suffix={retention.suffix}
-            label={retention.label}
-            description={retention.description}
-          />
+          {metrics.map((metric, idx) => (
+            <StatCard
+              key={idx}
+              value={metric.value}
+              label={metric.label}
+              description={metric.description}
+            />
+          ))}
         </div>
       </div>
     </section>
   );
 }
-

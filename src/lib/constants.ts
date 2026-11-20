@@ -29,12 +29,28 @@ export const siteConfig = {
     twitter: "https://twitter.com/primetalents",
     instagram: "https://www.instagram.com/primetalents",
   },
-  metrics: {
-    clients: { value: 150, suffix: "+", label: "Enterprise Clients", description: "Across Tech, Finance, Apparel & Logistics" },
-    placements: { value: 3200, suffix: "+", label: "Successful Placements", description: "Mid to C-suite level professionals" },
-    candidates: { value: 25000, suffix: "+", label: "Vetted Talent Pool", description: "Pre-screened active & passive candidates" },
-    retention: { value: 98, suffix: "%", label: "Client Retention Rate", description: "Long-term workforce partnerships" },
-  },
+  metrics: [
+    {
+      value: "3–5 Days",
+      label: "Average Shortlist Time",
+      description: "Curated, interview-ready profiles",
+    },
+    {
+      value: "100%",
+      label: "Success-Based Focus",
+      description: "Aligned with your hiring outcomes",
+    },
+    {
+      value: "End-to-End",
+      label: "Hiring Support",
+      description: "Sourcing, vetting & onboarding coordination",
+    },
+    {
+      value: "90-Day",
+      label: "Replacement Guarantee",
+      description: "Added confidence for every hire",
+    },
+  ],
   navLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
