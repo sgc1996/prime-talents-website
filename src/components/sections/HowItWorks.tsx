@@ -20,11 +20,11 @@ export function HowItWorks() {
         </div>
 
         {/* 4-Step Timeline Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative items-stretch">
           {siteConfig.processSteps.map((step, idx) => (
             <div
               key={idx}
-              className="relative p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm hover:shadow-xl hover:border-teal-500/40 transition-all duration-300 flex flex-col justify-between group"
+              className="relative p-7 sm:p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm hover:shadow-xl hover:border-teal-500/40 transition-all duration-300 flex flex-col group h-full"
             >
               {/* Step Counter Badge */}
               <div className="flex items-center justify-between mb-6">
@@ -36,8 +36,9 @@ export function HowItWorks() {
                 </span>
               </div>
 
+              {/* Title & Description with Consistent Top Alignment */}
               <div className="space-y-3">
-                <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                <h3 className="font-heading font-bold text-lg sm:text-xl text-navy-950 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                   {step.title}
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
@@ -57,4 +58,3 @@ export function HowItWorks() {
     </section>
   );
 }
-
