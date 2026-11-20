@@ -6,7 +6,6 @@ import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import { ConsultancyGrid } from "@/components/sections/ConsultancyGrid";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { HowItWorks } from "@/components/sections/HowItWorks";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { LatestInsights } from "@/components/sections/LatestInsights";
 import { FinalCtaBanner } from "@/components/sections/FinalCtaBanner";
 
@@ -33,10 +32,7 @@ export default function HomePage() {
       {/* 8. How It Works: 4-Step Process Timeline */}
       <HowItWorks />
 
-      {/* 9. Testimonials Carousel */}
-      <Testimonials />
-
-      {/* 10. Latest Insights: 3 MDX Thought Leadership Cards */}
+      {/* 9. Latest Insights: 3 MDX Thought Leadership Cards */}
       <LatestInsights posts={posts} />
 
       {/* 11. Final CTA Banner */}
