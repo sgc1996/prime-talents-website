@@ -56,7 +56,7 @@ export const siteConfig = {
     {
       id: "job-portal",
       title: "Career Gateway & Job Seeker Portal",
-      shortDesc: "A high-speed bridge connecting Sri Lanka's finest professionals with top-tier local and global employers.",
+      shortDesc: "A high-speed bridge connecting Sri Lanka's finest professionals with top-tier employers across the island.",
       badge: "For Job Seekers",
       icon: "Briefcase",
       anchor: "/services#job-portal",

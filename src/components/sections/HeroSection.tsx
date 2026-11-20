@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ExternalLink, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, ExternalLink, Sparkles } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
@@ -34,8 +34,8 @@ export function HeroSection() {
             {/* Outcome-focused Subtext */}
             <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               We bridge ambitious enterprises with vetted executive leaders,
-              specialized tech minds, and compliant HR outsourcing across Colombo
-              and international markets.
+              specialized professionals, and reliable talent solutions across Colombo
+              and island-wide Sri Lanka.
             </p>
 
             {/* CTA Buttons */}
@@ -63,8 +63,8 @@ export function HeroSection() {
             {/* Trust Signals */}
             <div className="pt-6 border-t border-slate-200/80 dark:border-navy-800 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 dark:text-slate-400">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-                <span>100% Sri Lankan Labour Law Compliant</span>
+                <span className="w-2 h-2 rounded-full bg-teal-500" />
+                <span>Verified Local Talent Pool</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-500" />
