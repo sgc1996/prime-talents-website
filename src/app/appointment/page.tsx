@@ -17,7 +17,7 @@ import { AppointmentForm } from "@/components/forms/AppointmentForm";
 export const metadata: Metadata = {
   title: "Book an Appointment | Schedule an Executive HR Consultation",
   description:
-    "Schedule a confidential workforce advisory session with a senior partner at Prime Talents Solutions Pvt Ltd in Colombo, Sri Lanka.",
+    "Schedule a confidential workforce advisory session with our team at Prime Talents Solutions (Pvt) Ltd in Colombo, Sri Lanka.",
 };
 
 export default function AppointmentPage() {

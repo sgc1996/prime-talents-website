@@ -84,7 +84,7 @@ export function ConsultancyGrid() {
             href="/appointment"
             className="inline-flex items-center gap-2 text-sm font-bold text-navy-900 dark:text-teal-400 hover:text-teal-600 dark:hover:text-teal-300 transition-colors group"
           >
-            <span>Discuss your specific workforce challenge with a senior partner</span>
+            <span>Discuss your hiring needs with our team</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

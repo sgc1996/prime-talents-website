@@ -73,7 +73,7 @@ export default function NotFound() {
               <p className="font-bold text-xs sm:text-sm text-navy-950 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400">
                 Book Consultation
               </p>
-              <p className="text-[11px] text-slate-400">Schedule with a senior partner</p>
+              <p className="text-[11px] text-slate-400">Schedule with our team</p>
             </div>
           </Link>
 
