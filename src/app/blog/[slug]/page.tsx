@@ -241,7 +241,7 @@ export default function BlogPostPage({ params }: Props) {
                 return (
                   <blockquote
                     key={idx}
-                    className="p-4 rounded-2xl bg-teal-50 dark:bg-navy-900 border-l-4 border-teal-500 text-teal-900 dark:text-teal-200 font-medium my-4 italic text-base"
+                    className="p-5 sm:p-6 rounded-2xl bg-teal-500/10 dark:bg-navy-900 border-l-4 border-teal-500 text-teal-950 dark:text-teal-200 font-medium my-6 italic text-base sm:text-lg leading-relaxed shadow-xs"
                   >
                     {block.replace("> ", "")}
                   </blockquote>
@@ -250,12 +250,11 @@ export default function BlogPostPage({ params }: Props) {
               if (block.startsWith("```")) {
                 const codeText = block.replace(/```[a-z]*\n?/g, "").trim();
                 return (
-                  <pre
-                    key={idx}
-                    className="p-4 rounded-2xl bg-navy-950 text-teal-300 font-mono text-xs sm:text-sm overflow-x-auto border border-navy-800 my-4"
-                  >
-                    <code>{codeText}</code>
-                  </pre>
+                  <div key={idx} className="my-6 rounded-2xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-md">
+                    <pre className="p-5 sm:p-6 bg-navy-950 text-teal-300 font-mono text-xs sm:text-sm overflow-x-auto leading-relaxed">
+                      <code className="block leading-relaxed tracking-wide">{codeText}</code>
+                    </pre>
+                  </div>
                 );
               }
               if (block.startsWith("- ") || block.startsWith("1. ")) {

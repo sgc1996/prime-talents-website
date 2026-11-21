@@ -9,9 +9,9 @@ import { formatDate } from "@/lib/utils";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Industry Insights & Research | Sri Lanka HR & Labor Intelligence",
+  title: "Workforce & Hiring Insights | Prime Talents Solutions",
   description:
-    "Empirical reports, salary trends, statutory compliance frameworks, and executive workforce strategies by Prime Talents Solutions advisory team.",
+    "Practical notes on hiring in Sri Lanka, salary and market trends, and building reliable local or remote teams by Prime Talents Solutions.",
 };
 
 export default function BlogIndexPage() {
@@ -21,9 +21,9 @@ export default function BlogIndexPage() {
     <div className="space-y-16 py-12 md:py-20">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <Badge variant="teal">Market Intelligence</Badge>
+        <Badge variant="teal">WORKFORCE INSIGHTS</Badge>
         <h1 className="text-4xl sm:text-5xl font-black font-heading text-navy-950 dark:text-white tracking-tight">
-          Industry Insights &amp; Strategic HR Research
+          Workforce &amp; Hiring Insights
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
           Practical notes on hiring in Sri Lanka, salary and market trends, and building reliable local or remote teams.
