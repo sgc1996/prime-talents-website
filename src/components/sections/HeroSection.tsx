@@ -66,7 +66,7 @@ export function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-500" />
-                <span>3–5 Day Shortlists</span>
+                <span>Within 72-Hour Shortlists</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-500" />

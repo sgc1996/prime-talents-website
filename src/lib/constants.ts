@@ -32,7 +32,7 @@ export const siteConfig = {
   },
   metrics: [
     {
-      value: "3–5 Days",
+      value: "Within 72 Hours",
       label: "Average Shortlist Time",
       description: "Curated, interview-ready profiles",
     },
@@ -114,7 +114,7 @@ export const siteConfig = {
       title: "Targeted Talent Sourcing",
       desc: "Dedicated search and structured screening for junior, mid-level, and specialist roles across key industries.",
       icon: "UserSearch",
-      outcome: "Average shortlist time: 3–5 days",
+      outcome: "Average shortlist time: Within 72 hours",
     },
     {
       title: "Sales & Commercial Hiring",

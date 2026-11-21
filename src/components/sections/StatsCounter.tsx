@@ -41,7 +41,7 @@ function StatCard({ value, label, description }: StatItemProps) {
       <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       {/* Main Metric Value (Single-line whitespace-nowrap with responsive font sizing) */}
-      <div className="font-heading font-black text-2xl sm:text-3xl lg:text-[26px] xl:text-[32px] 2xl:text-4xl text-teal-600 dark:text-teal-400 mb-2 tracking-tight whitespace-nowrap group-hover:scale-105 transition-transform duration-300">
+      <div className="font-heading font-black text-2xl sm:text-3xl lg:text-[22px] xl:text-[28px] 2xl:text-3xl text-teal-600 dark:text-teal-400 mb-2 tracking-tight whitespace-nowrap group-hover:scale-105 transition-transform duration-300">
         {value}
       </div>
 
