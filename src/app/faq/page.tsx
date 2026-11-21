@@ -78,6 +78,59 @@ const FAQ_DATA: FAQItem[] = [
   },
 ];
 
+function renderFaqAnswer(answer: string) {
+  if (answer.includes("• ")) {
+    const parts = answer.split("\n\n");
+    const intro = parts[0];
+    const bulletParts = parts.slice(1);
+
+    return (
+      <div className="space-y-4">
+        <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+          {intro}
+        </p>
+        <div className="space-y-3 pt-1">
+          {bulletParts.map((bullet, idx) => {
+            const cleanBullet = bullet.replace(/^•\s*/, "");
+            const colonIndex = cleanBullet.indexOf(":");
+            if (colonIndex !== -1) {
+              const label = cleanBullet.substring(0, colonIndex);
+              const desc = cleanBullet.substring(colonIndex + 1);
+              return (
+                <div
+                  key={idx}
+                  className="p-4 rounded-xl bg-slate-50 dark:bg-navy-950/80 border-l-4 border-teal-500 border border-slate-200/80 dark:border-navy-800 shadow-xs text-sm"
+                >
+                  <strong className="font-bold text-navy-950 dark:text-white block sm:inline mr-1.5">
+                    {label}:
+                  </strong>
+                  <span className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    {desc}
+                  </span>
+                </div>
+              );
+            }
+            return (
+              <div
+                key={idx}
+                className="p-3.5 rounded-xl bg-slate-50 dark:bg-navy-950 border-l-4 border-teal-500 border border-slate-200 dark:border-navy-800 text-sm text-slate-700 dark:text-slate-300"
+              >
+                {cleanBullet}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+      {answer}
+    </p>
+  );
+}
+
 export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -177,9 +230,7 @@ export default function FAQPage() {
               isOpen={openIndex === idx}
               onToggle={() => setOpenIndex(openIndex === idx ? null : idx)}
             >
-              <div className="whitespace-pre-line leading-relaxed">
-                {faq.a}
-              </div>
+              {renderFaqAnswer(faq.a)}
             </AccordionItem>
           ))
         )}
