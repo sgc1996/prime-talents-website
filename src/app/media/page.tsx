@@ -6,10 +6,11 @@ import {
   Download,
   ExternalLink,
   Mail,
-  Newspaper,
   Calendar,
   FileText,
   ShieldCheck,
+  Palette,
+  ArrowRight,
 } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
 import { Badge } from "@/components/ui/Badge";
@@ -17,57 +18,50 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "Media & Press Kit | News & Official Announcements",
+  title: "Company Updates & Brand Assets | Prime Talents Solutions",
   description:
-    "Official press releases, media coverage, brand assets, and press contacts for Prime Talents Solutions Pvt Ltd in Colombo, Sri Lanka.",
+    "Key updates, service launches, and official brand assets for partners, media, and press use by Prime Talents Solutions (Pvt) Ltd.",
 };
 
-const PRESS_RELEASES = [
+const OFFICIAL_ANNOUNCEMENTS = [
   {
-    date: "January 10, 2025",
-    title:
-      "Prime Talents Solutions Releases Annual Sri Lanka Talent Benchmark Report 2025",
+    tag: "COMPANY UPDATE",
+    date: "November 2026",
+    title: "Prime Talents Solutions Launches Recruitment & Workforce Services in Sri Lanka",
     summary:
-      "Empirical analysis reveals widespread shift toward foreign currency-indexed compensation in Colombo's technology and finance sectors amidst expanding global offshore demand.",
-    tag: "Industry Report",
-    readTime: "4 min read",
+      "Supporting growing businesses and job seekers with structured talent sourcing, contract staffing, and practical hiring coordination.",
   },
   {
-    date: "November 18, 2024",
-    title:
-      "Prime Talents Solutions Expands Specialized Tech & Executive Search Desks Across Sri Lanka",
+    tag: "SERVICE STANDARD",
+    date: "November 2026",
+    title: "Introducing Fast Shortlist Turnaround & 90-Day Replacement Guarantee",
     summary:
-      "Targeted recruitment desks enable high-growth technology firms and local conglomerates to onboard senior Sri Lankan professionals with accelerated 72-hour shortlist turnaround.",
-    tag: "Corporate Expansion",
-    readTime: "3 min read",
+      "Designed to give hiring teams clearer timelines, pre-screened candidates, and dependable post-placement support.",
   },
   {
-    date: "August 04, 2024",
-    title:
-      "Prime Talents Career Portal Reaches Milestone of 25,000 Vetted Sri Lankan Professionals",
+    tag: "PLATFORM & ACCESS",
+    date: "November 2026",
+    title: "Connecting Job Seekers with Verified Opportunities Through Our Job Portal",
     summary:
-      "The dedicated job gateway continues to connect ambitious local talent with verified executive, technical, and remote positions in leading regional enterprises.",
-    tag: "Milestone",
-    readTime: "3 min read",
+      "Helping candidates discover genuine openings across key roles while giving employers streamlined access to applicants.",
   },
 ];
 
 export default function MediaPage() {
   return (
     <div className="space-y-24 py-12 md:py-20">
-      {/* Header */}
+      {/* 1. Top Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <Badge variant="teal">News &amp; Media Center</Badge>
+        <Badge variant="teal">MEDIA &amp; UPDATES</Badge>
         <h1 className="text-4xl sm:text-5xl font-black font-heading text-navy-950 dark:text-white tracking-tight">
-          Press Releases &amp; Official Media Kit
+          Company Updates &amp; Brand Assets
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Stay updated with official company announcements, research publications,
-          and download brand assets for editorial use.
+          Key updates, service launches, and official brand assets for partners, media, and press use.
         </p>
       </section>
 
-      {/* Press Releases */}
+      {/* 2. Official Announcements (3 Cards) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl sm:text-3xl font-bold font-heading text-navy-950 dark:text-white">
@@ -75,137 +69,143 @@ export default function MediaPage() {
           </h2>
         </div>
 
-        <div className="space-y-6">
-          {PRESS_RELEASES.map((pr, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {OFFICIAL_ANNOUNCEMENTS.map((item, idx) => (
             <Card
               key={idx}
-              className="p-6 sm:p-8 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 shadow-sm hover:shadow-md transition-shadow"
+              className="p-6 sm:p-8 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
             >
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3">
-                <div className="flex items-center gap-3">
-                  <Badge variant="teal">{pr.tag}</Badge>
-                  <span className="flex items-center gap-1.5 text-xs text-slate-500">
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <Badge variant="teal">{item.tag}</Badge>
+                  <span className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
                     <Calendar className="w-3.5 h-3.5" />
-                    {pr.date}
+                    {item.date}
                   </span>
                 </div>
-                <span className="text-xs text-slate-400">{pr.readTime}</span>
+
+                <h3 className="font-heading font-bold text-lg sm:text-xl text-navy-950 dark:text-white leading-snug">
+                  {item.title}
+                </h3>
+
+                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                  {item.summary}
+                </p>
               </div>
-
-              <h3 className="font-heading font-bold text-xl sm:text-2xl text-navy-950 dark:text-white mb-2">
-                {pr.title}
-              </h3>
-
-              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed max-w-4xl">
-                {pr.summary}
-              </p>
             </Card>
           ))}
         </div>
       </section>
 
-      {/* Brand Kit & Press Assets */}
+      {/* 3. Official Media Assets & Brand Guidelines (3 Cards) */}
       <section className="bg-slate-50 dark:bg-navy-950/70 py-20 border-y border-slate-200/80 dark:border-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <Badge variant="teal">Brand Resources</Badge>
+            <Badge variant="teal">BRAND RESOURCES</Badge>
             <h2 className="text-3xl font-bold font-heading text-navy-950 dark:text-white">
               Official Media Assets &amp; Brand Guidelines
             </h2>
             <p className="text-slate-600 dark:text-slate-300 text-sm">
-              High-resolution vector logos, executive headshots, and company boilerplates
-              approved for publication.
+              Official logos, company overview notes, and brand materials approved for partner and press use.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="p-6 space-y-4 bg-white dark:bg-navy-900 border-slate-200 dark:border-navy-800">
-              <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-800 text-teal-600 dark:text-teal-400 flex items-center justify-center">
-                <FileText className="w-5 h-5" />
+            {/* Card 1: Company Overview & Boilerplate */}
+            <Card className="p-6 space-y-4 bg-white dark:bg-navy-900 border-slate-200 dark:border-navy-800 flex flex-col justify-between hover:border-teal-500/40 transition-colors">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-800 text-teal-600 dark:text-teal-400 flex items-center justify-center">
+                  <FileText className="w-5 h-5" />
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
+                  Company Overview &amp; Boilerplate
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Standard company description, core service summary, and official contact details for press or partner mentions.
+                </p>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
-                Company Factsheet &amp; Boilerplate
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Key leadership bios, corporate overview, statutory registration details,
-                and accredited milestones.
-              </p>
-              <a
-                href="/images/hero-abstract.svg"
-                download="PrimeTalents_Factsheet.svg"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:underline pt-2"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Download PDF Overview</span>
-              </a>
+              <div className="pt-2">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300"
+                >
+                  <span>View Company Overview</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
             </Card>
 
-            <Card className="p-6 space-y-4 bg-white dark:bg-navy-900 border-slate-200 dark:border-navy-800">
-              <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-800 text-teal-600 dark:text-teal-400 flex items-center justify-center">
-                <Download className="w-5 h-5" />
+            {/* Card 2: Logos & Brand Marks */}
+            <Card className="p-6 space-y-4 bg-white dark:bg-navy-900 border-slate-200 dark:border-navy-800 flex flex-col justify-between hover:border-teal-500/40 transition-colors">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-800 text-teal-600 dark:text-teal-400 flex items-center justify-center">
+                  <Download className="w-5 h-5" />
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
+                  Logos &amp; Brand Marks
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Primary Prime Talents Solutions logo files and clean visual marks for approved editorial or partner use.
+                </p>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
-                Logos &amp; Brand Marks
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Vector SVG and PNG formats of Prime Talents Solutions Pvt Ltd
-                logos in full color, light, and dark variants.
-              </p>
-              <a
-                href="/images/hero-abstract.svg"
-                download="PrimeTalents_BrandPack.svg"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:underline pt-2"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Download Logo Vector Kit</span>
-              </a>
+              <div className="pt-2">
+                <a
+                  href="/images/logo.png"
+                  download="PrimeTalents_Logo.png"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download Brand Assets</span>
+                </a>
+              </div>
             </Card>
 
-            <Card className="p-6 space-y-4 bg-white dark:bg-navy-900 border-slate-200 dark:border-navy-800">
-              <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-800 text-teal-600 dark:text-teal-400 flex items-center justify-center">
-                <Newspaper className="w-5 h-5" />
+            {/* Card 3: Brand Usage Guidelines */}
+            <Card className="p-6 space-y-4 bg-white dark:bg-navy-900 border-slate-200 dark:border-navy-800 flex flex-col justify-between hover:border-teal-500/40 transition-colors">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-navy-800 text-teal-600 dark:text-teal-400 flex items-center justify-center">
+                  <Palette className="w-5 h-5" />
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
+                  Brand Usage Guidelines
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Basic spacing, clear-zone, and color guidelines to keep the Prime Talents Solutions brand consistent.
+                </p>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
-                Executive Portraits
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                High-resolution studio portraits of Managing Director Dinesh Samarasinghe
-                and senior advisory partners.
-              </p>
-              <a
-                href="/images/team/avatar-1.svg"
-                download="PrimeTalents_ExecutiveHeadshots.svg"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:underline pt-2"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Download Executive Media Pack</span>
-              </a>
+              <div className="pt-2">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300"
+                >
+                  <span>View Brand Guidelines</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Media Inquiries Contact Strip */}
+      {/* 4. Bottom Callout Box: Media & Inquiries */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 sm:p-12 rounded-3xl bg-navy-950 text-white border border-teal-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="p-8 sm:p-12 rounded-3xl bg-navy-950 text-white border border-teal-500/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2">
             <h3 className="font-heading font-bold text-2xl">
-              Media &amp; Journalist Inquiries
+              Media, Partnership &amp; Press Inquiries
             </h3>
-            <p className="text-slate-300 text-sm max-w-xl">
-              Our workforce analysts and legal compliance directors provide expert
-              quotes and empirical commentary on Sri Lanka employment trends.
+            <p className="text-slate-300 text-sm max-w-xl leading-relaxed">
+              Need company details, official information, or a comment from our team? Reach out to us directly.
             </p>
           </div>
-          <a href={`mailto:media@primetalentssolutions.lk`} className="shrink-0">
+          <Link href="/contact" className="shrink-0">
             <Button variant="accent" size="lg" className="font-bold flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>Contact Press Office</span>
+              <span>Contact Us</span>
             </Button>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
   );
 }
-
