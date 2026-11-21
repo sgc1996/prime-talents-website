@@ -195,33 +195,30 @@ export default function AboutPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {TEAM_PILLARS.map((member, idx) => (
-            <Card
-              key={idx}
-              className="p-8 text-center space-y-4 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 hover:shadow-xl hover:border-teal-500/40 hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-teal-500 shadow-md bg-teal-50 dark:bg-navy-800 p-3 flex items-center justify-center">
-                <Image
-                  src={member.avatar}
-                  alt={member.title}
-                  width={80}
-                  height={80}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
-                  {member.title}
-                </h3>
-                <p className="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider mt-1">
-                  {member.role}
+          {TEAM_PILLARS.map((member, idx) => {
+            const Icon = member.icon;
+            return (
+              <Card
+                key={idx}
+                className="p-8 text-center space-y-4 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 hover:shadow-xl hover:border-teal-500/40 hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="w-20 h-20 mx-auto rounded-full bg-teal-500/10 dark:bg-teal-500/15 border-2 border-teal-500 flex items-center justify-center text-teal-600 dark:text-teal-400 shadow-md">
+                  <Icon className="w-9 h-9" />
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
+                    {member.title}
+                  </h3>
+                  <p className="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider mt-1">
+                    {member.role}
+                  </p>
+                </div>
+                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pt-2 border-t border-slate-100 dark:border-navy-800">
+                  {member.desc}
                 </p>
-              </div>
-              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pt-2 border-t border-slate-100 dark:border-navy-800">
-                {member.desc}
-              </p>
-            </Card>
-          ))}
+              </Card>
+            );
+          })}
         </div>
       </section>
 
