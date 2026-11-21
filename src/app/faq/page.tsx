@@ -6,7 +6,6 @@ import { Search, HelpCircle, ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { AccordionItem } from "@/components/ui/Accordion";
-import { siteConfig } from "@/lib/constants";
 
 interface FAQItem {
   q: string;
@@ -15,50 +14,67 @@ interface FAQItem {
 }
 
 const FAQ_DATA: FAQItem[] = [
+  // For Employers (1–4)
   {
     category: "employers",
-    q: "How does your executive search and recruitment process work?",
-    a: "We begin with a strategic discovery session to profile your role, company culture, compensation parameters, and ideal candidate persona. Our consultants tap into passive talent networks across Sri Lanka and regional hubs, conduct behavioral and competency vetting, and present a curated shortlist within 72 hours.",
+    q: "How does your recruitment and hiring process work?",
+    a: "We start with a quick role briefing to understand your required skills, budget, team fit, and hiring timeline. From there, we source and screen active and passive candidates across Sri Lanka, run practical competency and reference checks, and share a curated shortlist within 72 hours.",
   },
   {
     category: "employers",
     q: "Do you offer a candidate replacement guarantee?",
-    a: "Yes. All our permanent executive and professional placements are backed by an industry-leading 90-day replacement warranty. If a placed candidate departs or fails to meet defined probation criteria within this period, we provide an equivalent replacement at zero additional recruitment cost.",
+    a: "Yes. All permanent placements include a 90-day replacement guarantee. If a hired candidate leaves or does not work out during the first 90 days, we will source and provide a suitable replacement at no extra recruitment fee.",
   },
   {
     category: "employers",
     q: "Can you provide temporary or contract staff for short-term projects?",
-    a: "Yes. Our staff augmentation and contract staffing service supplies qualified technical, administrative, and operational professionals for project-based or seasonal assignments, helping you scale quickly without long-term overhead.",
+    a: "Yes. Through our staff augmentation and contract staffing service, we supply pre-vetted technical, administrative, and operational professionals for project-based, seasonal, or fixed-term work—helping your team scale without long-term hiring overhead.",
   },
+  {
+    category: "employers",
+    q: "How can my company submit a job vacancy or start hiring with you?",
+    a: "You can book a quick consultation using the Book an Appointment button on our website or reach out via our Contact page with your role details. Once we confirm the role scope, we begin candidate sourcing immediately.",
+  },
+
+  // For Job Seekers (5–8)
   {
     category: "jobseekers",
     q: "Do job seekers pay any fees to Prime Talents Solutions?",
-    a: "Never. Under our strict ethical charter, we never charge candidates for job placement, CV registration, or interview scheduling. Our recruitment services are entirely employer-funded.",
+    a: "No, never. We do not charge job seekers any fees for registration, CV submission, job matching, or interview coordination. Our recruitment services are completely free for candidates.",
   },
   {
     category: "jobseekers",
     q: "How do I submit my CV and apply for active vacancies?",
-    a: "You can submit your resume directly through our dedicated Job Seeker Portal. Our system parses your experience and skills, matching you with relevant open roles across IT, finance, apparel, logistics, and engineering.",
+    a: "You can explore open roles and submit your CV directly through the Prime Talents Job Portal. Our team reviews your background and skills to match you with verified opportunities across IT, finance, sales, operations, logistics, and corporate roles.",
   },
   {
     category: "jobseekers",
     q: "Will my current employer know that I am exploring new opportunities?",
-    a: "We maintain absolute confidentiality. We will never share your profile, CV, or employment history with any potential employer without your explicit prior authorization.",
+    a: "No. We treat every candidate profile as strictly confidential. We never share your CV, personal details, or application status with any employer without your clear permission first.",
   },
+  {
+    category: "jobseekers",
+    q: "Do you offer support with CV preparation or interview readiness?",
+    a: "Yes. As part of our Candidate Readiness & Advisory support, we provide practical guidance on structuring your CV clearly and preparing for role-specific interviews.",
+  },
+
+  // Staff Augmentation (9–10)
   {
     category: "staffing",
     q: "How does contract staffing work with Prime Talents Solutions?",
-    a: "We deploy verified candidates to work on your designated projects according to your scope and schedule requirements, handling sourcing, vetting, and workforce coordination so you can focus on execution.",
+    a: "We match pre-vetted contract professionals to your project scope and schedule. Our team handles initial sourcing, credential verification, and ongoing attendance and contractor coordination while your team directs the day-to-day work.",
   },
   {
     category: "staffing",
     q: "How quickly can contract or temporary personnel be deployed?",
-    a: "Depending on role specialization, pre-vetted contractors and technical staff can typically be onboarded within 3 to 7 business days.",
+    a: "Depending on the role and skill requirements, pre-vetted contract and temporary staff can typically be deployed within 3 to 7 business days.",
   },
+
+  // Pricing & Models (11)
   {
     category: "pricing",
     q: "What are your recruitment engagement and fee structures?",
-    a: "For permanent placements, we operate on a success-fee model (a percentage of the candidate's first-year gross annual remuneration, payable only once the candidate commences employment). For retained executive search (C-suite/VP), we offer milestone-based retained arrangements. Staff augmentation engagements are structured based on agreed transparent day-rates or monthly contractor fees.",
+    a: "We keep our pricing straightforward and aligned with your hiring model:\n\n• Permanent Recruitment: We work on a success-fee basis—a pre-agreed percentage of the candidate's starting annual compensation, payable only after the candidate joins your team.\n\n• Contract Staffing & Staff Augmentation: Structured around transparent daily or monthly contractor rates agreed upfront based on role scope and duration.\n\n• Custom Hiring Support: For multi-role hiring or dedicated support, we offer flexible engagement terms tailored to your budget.",
   },
 ];
 
@@ -85,8 +101,7 @@ export default function FAQPage() {
           Frequently Asked Questions
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Clear answers about our recruitment models, contract staffing,
-          candidate privacy, and hiring process.
+          Clear answers about our recruitment models, contract staffing, candidate privacy, and hiring process.
         </p>
 
         {/* Real-time Search Input */}
@@ -141,7 +156,7 @@ export default function FAQPage() {
               No matching answers found
             </h3>
             <p className="text-sm text-slate-500">
-              Try a different keyword or contact our Colombo advisory desk directly.
+              Try a different keyword or contact our team directly.
             </p>
             <Button
               variant="outline"
@@ -162,7 +177,9 @@ export default function FAQPage() {
               isOpen={openIndex === idx}
               onToggle={() => setOpenIndex(openIndex === idx ? null : idx)}
             >
-              <p>{faq.a}</p>
+              <div className="whitespace-pre-line leading-relaxed">
+                {faq.a}
+              </div>
             </AccordionItem>
           ))
         )}
@@ -170,18 +187,18 @@ export default function FAQPage() {
 
       {/* Still Have Questions CTA */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="p-8 sm:p-10 rounded-3xl bg-navy-950 text-white border border-teal-500/30 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div className="p-8 sm:p-10 rounded-3xl bg-navy-950 text-white border border-teal-500/30 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left shadow-xl">
           <div className="space-y-1">
             <h3 className="font-heading font-bold text-xl sm:text-2xl">
               Still have questions about our services?
             </h3>
             <p className="text-xs sm:text-sm text-slate-300">
-              Our Colombo recruitment and compliance specialists are available to guide you.
+              Our team in Sri Lanka is ready to help with your hiring plans or job search questions.
             </p>
           </div>
           <Link href="/contact" className="shrink-0">
             <Button variant="accent" className="font-bold flex items-center gap-2">
-              <span>Contact Support</span>
+              <span>Contact Us</span>
               <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>
@@ -190,4 +207,3 @@ export default function FAQPage() {
     </div>
   );
 }
-
