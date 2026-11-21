@@ -26,8 +26,7 @@ export default function BlogIndexPage() {
           Industry Insights &amp; Strategic HR Research
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Expert analysis on compensation trends, talent retention strategies,
-          executive headhunting, and workforce architecture in Sri Lanka.
+          Practical notes on hiring in Sri Lanka, salary and market trends, and building reliable local or remote teams.
         </p>
       </section>
 

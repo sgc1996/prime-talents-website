@@ -212,8 +212,10 @@ export default function BlogPostPage({ params }: Props) {
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="space-y-6 text-slate-800 dark:text-slate-200 text-base sm:text-lg leading-relaxed">
           {post.content
+            .replace(/\r\n/g, "\n")
             .split("\n\n")
-            .filter((block) => !block.startsWith("# ")) // Avoid duplicate H1
+            .map((b) => b.trim())
+            .filter((block) => block.length > 0 && !block.startsWith("# ") && block !== "---") // Avoid duplicate H1 and raw dividers
             .map((block, idx) => {
               if (block.startsWith("## ")) {
                 return (
@@ -292,15 +294,14 @@ export default function BlogPostPage({ params }: Props) {
         {/* Appointment Consultation Box */}
         <div className="mt-12 p-8 rounded-3xl bg-slate-50 dark:bg-navy-900 border border-teal-500/40 space-y-4">
           <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
-            Need Expert HR Advisory for Your Enterprise?
+            Discuss Your Hiring Needs
           </h3>
           <p className="text-sm text-slate-600 dark:text-slate-300">
-            Our Colombo advisory team conducts customized workforce audits,
-            compensation reviews, and executive searches tailored to your organizational goals.
+            Connect with our recruitment and workforce team to plan effective hiring, salary benchmarking, or contract staffing across Sri Lanka.
           </p>
           <Link href="/appointment">
             <Button variant="accent" className="font-bold">
-              Book a Consultation with Our Authors
+              Book an Appointment
             </Button>
           </Link>
         </div>
@@ -310,7 +311,7 @@ export default function BlogPostPage({ params }: Props) {
       {relatedPosts.length > 0 && (
         <aside className="max-w-4xl mx-auto px-4 sm:px-6 pt-16 border-t border-slate-200/80 dark:border-navy-800 space-y-8">
           <h3 className="font-heading font-bold text-2xl text-navy-950 dark:text-white">
-            Related Thought Leadership
+            Related Insights
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {relatedPosts.map((rel) => (
