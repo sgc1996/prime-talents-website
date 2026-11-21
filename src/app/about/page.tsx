@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import {
   ShieldCheck,
+  CheckCircle2,
   Target,
   Award,
   Heart,
@@ -134,15 +135,49 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="lg:col-span-6">
-            <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-xl bg-navy-950 p-2">
-              <Image
-                src="/images/hero-abstract.svg"
-                alt="Prime Talents Solutions Workforce Network"
-                width={600}
-                height={400}
-                className="w-full h-auto rounded-2xl"
-              />
+          <div className="lg:col-span-6 relative flex justify-center">
+            <div className="relative w-full max-w-md lg:max-w-none">
+              {/* Top-Right Floating Card: End-to-End Support */}
+              <div className="absolute -top-5 -right-3 sm:-right-6 bg-white dark:bg-navy-900 border border-slate-200/90 dark:border-navy-800 rounded-2xl p-3 sm:p-3.5 shadow-xl hidden sm:flex items-center gap-3 z-10">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
+                  <CheckCircle2 className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-navy-950 dark:text-white font-heading leading-tight">
+                    End-to-End Support
+                  </p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                    Sourcing to smooth onboarding
+                  </p>
+                </div>
+              </div>
+
+              {/* Main Visual Image Card */}
+              <div className="relative rounded-3xl overflow-hidden border border-slate-200/80 dark:border-navy-800 shadow-2xl bg-white dark:bg-navy-900 p-2">
+                <Image
+                  src="/images/hero-abstract.svg"
+                  alt="Prime Talents Solutions Strategic Talent Network Visual"
+                  width={600}
+                  height={450}
+                  priority
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
+
+              {/* Bottom-Left Floating Card: 90-Day Guarantee */}
+              <div className="absolute -bottom-6 -left-3 sm:-left-6 bg-white dark:bg-navy-900 border border-slate-200/90 dark:border-navy-800 rounded-2xl p-3 sm:p-3.5 shadow-xl hidden sm:flex items-center gap-3 z-10">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-navy-950 dark:text-white font-heading leading-tight">
+                    90-Day Guarantee
+                  </p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                    Replacement protection included
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
