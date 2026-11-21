@@ -15,7 +15,7 @@ import { Card } from "@/components/ui/Card";
 import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Colombo Head Office & Inquiries",
+  title: "Contact Us | Get in Touch With Our Team",
   description:
     "Get in touch with Prime Talents Solutions (Pvt) Ltd. Reach our recruitment, staffing, and candidate support teams in Colombo, Sri Lanka.",
 };
@@ -30,16 +30,14 @@ export default function ContactPage() {
 
   return (
     <div className="py-12 md:py-20 space-y-16">
-      {/* Header */}
+      {/* 1. Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <Badge variant="teal">Get In Touch</Badge>
         <h1 className="text-4xl sm:text-5xl font-black font-heading text-navy-950 dark:text-white tracking-tight">
-          We&apos;re Here to Power Your Workforce Growth
+          Get in Touch With Our Team
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Whether you represent an enterprise seeking top-tier talent, a job seeker
-          with questions about our portal, or a journalist requiring industry commentary,
-          we look forward to speaking with you.
+          Whether you are hiring for your team, looking for job opportunities, or reaching out about a partnership or media inquiry, we are happy to help.
         </p>
       </section>
 
@@ -53,18 +51,17 @@ export default function ContactPage() {
                 Send Us a Direct Message
               </h2>
               <p className="text-sm text-slate-600 dark:text-slate-300 mb-8">
-                Complete the inquiry form and our Colombo desk will connect you
-                with the relevant practice lead.
+                Share your details and message below, and our team will get back to you.
               </p>
               <ContactForm />
             </Card>
           </div>
 
-          {/* Right Column: Office Address, Phone & Map (5 cols) */}
+          {/* Right Column: Office & Contact Info (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
-            <Card className="p-8 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 shadow-sm space-y-6">
+            <Card className="p-8 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 shadow-xl space-y-6">
               <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
-                Colombo Office
+                Contact Information
               </h3>
 
               <div className="space-y-4 text-sm text-slate-600 dark:text-slate-300">
@@ -74,9 +71,7 @@ export default function ContactPage() {
                     <strong className="block text-navy-950 dark:text-white">
                       Location
                     </strong>
-                    <span>
-                      Colombo, Sri Lanka
-                    </span>
+                    <span>Colombo, Sri Lanka</span>
                   </div>
                 </div>
 
@@ -88,11 +83,11 @@ export default function ContactPage() {
                     </strong>
                     <a
                       href={`tel:${siteConfig.contact.phone.replace(/\s+/g, "")}`}
-                      className="hover:underline font-semibold"
+                      className="hover:underline font-semibold text-navy-950 dark:text-white"
                     >
                       {siteConfig.contact.phone}
                     </a>
-                    <span className="block text-xs text-slate-400 mt-0.5">
+                    <span className="block text-xs text-slate-500 dark:text-slate-400 mt-0.5">
                       Hotline &amp; WhatsApp: {siteConfig.contact.hotline}
                     </span>
                   </div>
@@ -104,23 +99,23 @@ export default function ContactPage() {
                     <strong className="block text-navy-950 dark:text-white">
                       Email Inquiries
                     </strong>
-                    <div className="space-y-0.5 text-xs">
+                    <div className="space-y-1.5 text-xs mt-1.5">
                       <p>
-                        General:{" "}
-                        <a href={`mailto:${siteConfig.contact.email}`} className="text-teal-600 hover:underline">
-                          {siteConfig.contact.email}
+                        <span className="text-slate-500 dark:text-slate-400 font-medium">General:</span>{" "}
+                        <a href="mailto:info@primetalentssolutions.lk" className="text-teal-600 dark:text-teal-400 font-semibold hover:underline">
+                          info@primetalentssolutions.lk
                         </a>
                       </p>
                       <p>
-                        Clients &amp; Headhunting:{" "}
-                        <a href={`mailto:${siteConfig.contact.clientEmail}`} className="text-teal-600 hover:underline">
-                          {siteConfig.contact.clientEmail}
+                        <span className="text-slate-500 dark:text-slate-400 font-medium">Hiring &amp; Solutions:</span>{" "}
+                        <a href="mailto:solutions@primetalentssolutions.lk" className="text-teal-600 dark:text-teal-400 font-semibold hover:underline">
+                          solutions@primetalentssolutions.lk
                         </a>
                       </p>
                       <p>
-                        Job Seekers:{" "}
-                        <a href={`mailto:${siteConfig.contact.recruitmentEmail}`} className="text-teal-600 hover:underline">
-                          {siteConfig.contact.recruitmentEmail}
+                        <span className="text-slate-500 dark:text-slate-400 font-medium">Job Seekers &amp; Careers:</span>{" "}
+                        <a href="mailto:careers@primetalentssolutions.lk" className="text-teal-600 dark:text-teal-400 font-semibold hover:underline">
+                          careers@primetalentssolutions.lk
                         </a>
                       </p>
                     </div>
@@ -148,36 +143,6 @@ export default function ContactPage() {
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
                   <span>Chat With Us on WhatsApp</span>
-                </a>
-              </div>
-            </Card>
-
-            {/* Styled Colombo Location Graphic */}
-            <Card className="overflow-hidden border-slate-200 dark:border-navy-800 bg-slate-100 dark:bg-navy-900 shadow-sm">
-              <div className="p-4 bg-navy-950 text-white flex items-center justify-between text-xs">
-                <span className="flex items-center gap-1.5 font-bold">
-                  <Building2 className="w-4 h-4 text-teal-400" />
-                  Colombo, Sri Lanka
-                </span>
-                <span className="text-teal-400 font-mono text-[10px]">6.9271° N, 79.8612° E</span>
-              </div>
-              <div className="relative h-48 w-full bg-slate-200 dark:bg-navy-950 flex flex-col items-center justify-center text-center p-6 space-y-2">
-                <div className="w-10 h-10 rounded-full bg-teal-500/20 text-teal-600 dark:text-teal-400 flex items-center justify-center animate-bounce">
-                  <MapPin className="w-6 h-6" />
-                </div>
-                <h4 className="font-heading font-bold text-sm text-navy-950 dark:text-white">
-                  Prime Talents Solutions (Pvt) Ltd
-                </h4>
-                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-xs">
-                  Colombo, Sri Lanka
-                </p>
-                <a
-                  href="https://maps.google.com/?q=Colombo,+Sri+Lanka"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[11px] font-bold text-teal-600 dark:text-teal-400 hover:underline pt-1"
-                >
-                  Open in Google Maps →
                 </a>
               </div>
             </Card>

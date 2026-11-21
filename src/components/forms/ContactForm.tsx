@@ -16,7 +16,7 @@ const INQUIRY_OPTIONS = [
   { label: "Employer: Hiring & Talent Search", value: "employer-hiring" },
   { label: "Employer: Staff Augmentation & Contractors", value: "employer-staffing" },
   { label: "Job Seeker: Application Status / Portal", value: "candidate-portal" },
-  { label: "Corporate Training & Workshops", value: "corporate-training" },
+  { label: "Candidate Readiness & Advisory", value: "candidate-advisory" },
   { label: "Media & Press Inquiries", value: "media-press" },
   { label: "General Business Partnerships", value: "partnerships" },
 ];
