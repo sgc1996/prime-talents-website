@@ -36,8 +36,8 @@ export default function PrivacyPolicyPage() {
           </p>
           <p>
             This Privacy Policy sets out how we collect, process, store, and disclose
-            personal data in compliance with the **Personal Data Protection Act No. 9 of 2022
-            (PDPA)** of Sri Lanka, international data protection standards, and guidelines
+            personal data in compliance with the <strong>Personal Data Protection Act No. 9 of 2022
+            (PDPA)</strong> of Sri Lanka, international data protection standards, and guidelines
             issued by the Data Protection Authority of Sri Lanka.
           </p>
         </section>

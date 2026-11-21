@@ -66,6 +66,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function renderFormattedText(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={i} className="font-semibold text-navy-950 dark:text-white">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
 export default function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(params.slug);
   if (!post) {
@@ -243,7 +257,7 @@ export default function BlogPostPage({ params }: Props) {
                     key={idx}
                     className="p-5 sm:p-6 rounded-2xl bg-teal-500/10 dark:bg-navy-900 border-l-4 border-teal-500 text-teal-950 dark:text-teal-200 font-medium my-6 italic text-base sm:text-lg leading-relaxed shadow-xs"
                   >
-                    {block.replace("> ", "")}
+                    {renderFormattedText(block.replace("> ", ""))}
                   </blockquote>
                 );
               }
@@ -264,7 +278,7 @@ export default function BlogPostPage({ params }: Props) {
                     {items.map((it, iIdx) => (
                       <li key={iIdx} className="flex items-start gap-2.5 text-sm sm:text-base">
                         <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0 mt-1" />
-                        <span>{it.replace(/^[-*]|\d+\.\s*/, "")}</span>
+                        <span>{renderFormattedText(it.replace(/^[-*]|\d+\.\s*/, ""))}</span>
                       </li>
                     ))}
                   </ul>
@@ -272,7 +286,7 @@ export default function BlogPostPage({ params }: Props) {
               }
               return (
                 <p key={idx} className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                  {block}
+                  {renderFormattedText(block)}
                 </p>
               );
             })}
