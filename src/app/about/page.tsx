@@ -7,10 +7,10 @@ import {
   Target,
   Award,
   Heart,
-  TrendingUp,
-  Users,
-  CheckCircle2,
   ArrowRight,
+  UserCheck,
+  Briefcase,
+  Search,
 } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
 import { Badge } from "@/components/ui/Badge";
@@ -18,118 +18,109 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "About Us | Sri Lanka's Trusted Talent & HR Consultancy",
+  title: "About Us | Practical Recruitment & Talent Solutions Sri Lanka",
   description:
-    "Learn about Prime Talents Solutions Pvt Ltd, our journey in Colombo, our leadership, core values, and trusted workforce solutions.",
+    "Learn about Prime Talents Solutions (Pvt) Ltd, our mission, core values, and dedicated team providing practical recruitment and workforce solutions across Sri Lanka.",
 };
 
-const LEADERSHIP_TEAM = [
+const TEAM_PILLARS = [
   {
-    name: "Dinesh Samarasinghe",
-    role: "Managing Director & Head of Executive Search",
-    bio: "Over 18 years leading talent acquisition across South Asia, advising Tier-1 conglomerates, apparel export leaders, and global software engineering hubs.",
+    title: "Talent Sourcing & Screening",
+    role: "Candidate Discovery & Vetting",
+    desc: "Identifying active and passive candidates across key roles with structured initial screening, skill checks, and background verification.",
     avatar: "/images/team/avatar-1.svg",
-    credentials: "MBA (PIM-SJP), SHRM-SCP",
+    icon: Search,
   },
   {
-    name: "Kavinda Wickramasinghe",
-    role: "Head of Operations & Client Partnerships",
-    bio: "Experienced operations and client engagement lead with extensive background in workforce planning, recruitment delivery cycles, and industry partner relationships.",
+    title: "Client & Hiring Coordination",
+    role: "Account & Engagement Support",
+    desc: "Aligning on role requirements, managing interview schedules, and ensuring smooth offer communication with zero back-and-forth friction.",
     avatar: "/images/team/avatar-2.svg",
-    credentials: "MBA, B.Sc. Business Administration, SHRM-CP",
+    icon: Briefcase,
   },
   {
-    name: "Dr. Anoma Jayasuriya",
-    role: "Principal Workforce Strategist & Leadership Coach",
-    bio: "Chartered organizational psychologist helping multinational firms establish high-performing offshore delivery centers and executive development pipelines.",
+    title: "Candidate Portal & Career Support",
+    role: "Job Seeker Access & Advisory",
+    desc: "Helping job seekers connect with verified openings and providing clear, respectful updates and guidance throughout their career search.",
     avatar: "/images/team/avatar-3.svg",
-    credentials: "Ph.D. Organizational Behavior, CIPD Fellow",
+    icon: UserCheck,
   },
 ];
 
 const CORE_VALUES = [
   {
-    title: "Uncompromising Integrity",
-    desc: "We practice full transparency in candidate assessments, employer SLAs, and ethical recruitment practices without shortcuts.",
+    title: "Clear & Honest Process",
+    desc: "No inflated claims or hidden steps—just straightforward timelines, realistic expectations, and transparent communication.",
     icon: ShieldCheck,
   },
   {
-    title: "Outcome-Driven Focus",
-    desc: "We measure success by long-term retention and quantifiable client value, not merely the volume of submitted resumes.",
+    title: "Practical Role Fit",
+    desc: "We look beyond keywords on a CV to match candidates with actual skills, work ethic, and team needs.",
     icon: Target,
   },
   {
-    title: "Empathetic Human Centricity",
-    desc: "Behind every hiring brief and resume is an ambitious individual and family. We treat every career journey with dignity and care.",
+    title: "Respect for People & Time",
+    desc: "Whether you are a busy hiring manager or a candidate waiting on feedback, we value timely updates and respectful coordination.",
     icon: Heart,
   },
   {
-    title: "Domain Mastery & Rigor",
-    desc: "Our search consultants specialize strictly in specific industry verticals, bringing real technical and market acumen to every evaluation.",
+    title: "Accountable Delivery",
+    desc: "From Within 72 Hours initial shortlist speed to our 90-Day Replacement Guarantee, we stand behind how we work.",
     icon: Award,
   },
 ];
 
-const MILESTONES = [
+const FOUNDATION_STAGES = [
   {
-    year: "2016",
-    title: "Inception in Colombo",
-    desc: "Founded as a boutique executive search firm serving Colombo's emerging software and financial technology clusters.",
+    stage: "Foundation",
+    title: "Prime Talents Solutions",
+    desc: "Established in Sri Lanka to offer practical, accessible recruitment and workforce support for growing enterprises.",
   },
   {
-    year: "2019",
-    title: "Expansion into Staff Augmentation",
-    desc: "Expanded into flexible staff augmentation and contract staffing, servicing over 40 leading corporate enterprises across Sri Lanka.",
+    stage: "Service Design",
+    title: "Employers & Job Seekers",
+    desc: "Structured around both B2B hiring needs and candidate job-search access, bridging ambition with genuine opportunity.",
   },
   {
-    year: "2021",
-    title: "Industry Verticals & Tech Specialization",
-    desc: "Launched specialized recruitment divisions for Information Technology, Banking & Finance, and Manufacturing sectors.",
+    stage: "Speed & Quality",
+    title: "72-Hour & 90-Day Standards",
+    desc: "Built with fast shortlist momentum and a reliable 90-day replacement guarantee for total hiring confidence.",
   },
   {
-    year: "2024",
-    title: "Prime Talents Digital Career Gateway",
-    desc: "Launched our centralized job portal connecting vetted candidates directly with verified opportunities.",
+    stage: "Ongoing Growth",
+    title: "Job Portal & Expansion",
+    desc: "Continuing to expand verified job listings and reliable staffing support across Colombo and island-wide Sri Lanka.",
   },
 ];
 
 export default function AboutPage() {
   return (
     <div className="space-y-24 py-12 md:py-20">
-      {/* Hero Header */}
+      {/* 1. Top Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <Badge variant="teal">About Prime Talents Solutions</Badge>
+          <Badge variant="teal">ABOUT PRIME TALENTS SOLUTIONS</Badge>
           <h1 className="text-4xl sm:text-5xl font-black font-heading text-navy-950 dark:text-white tracking-tight">
-            Connecting Ambition with Opportunity Across Sri Lanka
+            Connecting Businesses with Reliable Talent Across Sri Lanka
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-            Headquartered in the heart of Colombo, we have earned our reputation as
-            one of Sri Lanka&apos;s most dependable HR consultancies—helping
-            enterprises build resilient workforces and guiding professionals to
-            rewarding careers.
+            A practical recruitment and workforce partner helping companies hire skilled talent faster—while giving job seekers clear access to verified career opportunities.
           </p>
         </div>
       </section>
 
-      {/* Story & Context */}
+      {/* 2. Story / Overview Block */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-3xl font-bold font-heading text-navy-950 dark:text-white">
-              Built on Ethical Principles and Local Market Mastery
+              Built on Practical Execution and Honest Hiring
             </h2>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Prime Talents Solutions was founded on a simple observation:
-              Sri Lanka possesses world-class talent, yet organizations often struggle
-              to source candidates who fit their technical standards and cultural DNA.
+              Prime Talents Solutions was started with a straightforward goal: make hiring in Sri Lanka simpler, faster, and more dependable for growing businesses while helping job seekers find genuine roles without unnecessary friction.
             </p>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              We replaced obsolete CV agency practices with an evidence-based
-              consultative framework. Today, our multidisciplinary team of recruitment
-              headhunters, chartered accountants, and labor law advisors supports
-              over 150 enterprise clients spanning technology, banking, logistics,
-              apparel manufacturing, and healthcare.
+              Instead of sending endless, unfiltered CVs or overpromising results, we focus on clear role alignment, structured screening, and responsive communication—supporting both full-time hiring and contract staffing needs.
             </p>
             <div className="pt-2 flex items-center gap-4">
               <Link href="/appointment">
@@ -147,7 +138,7 @@ export default function AboutPage() {
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-navy-800 shadow-xl bg-navy-950 p-2">
               <Image
                 src="/images/hero-abstract.svg"
-                alt="Prime Talents Solutions Colombo Headquarters"
+                alt="Prime Talents Solutions Workforce Network"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-2xl"
@@ -157,11 +148,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Core Values */}
+      {/* 3. Our Guiding Values */}
       <section className="bg-white dark:bg-navy-900 py-20 border-y border-slate-200/80 dark:border-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <Badge variant="teal">What Drives Us</Badge>
+            <Badge variant="teal">WHAT DRIVES US</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
               Our Guiding Values
             </h2>
@@ -191,71 +182,67 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership Team */}
+      {/* 4. Team / Leadership Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <Badge variant="teal">Leadership</Badge>
+          <Badge variant="teal">OUR TEAM</Badge>
           <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-            Meet Our Senior Advisory Partners
+            Focused Specialists Behind Every Search
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-            Decades of combined corporate governance, cross-border recruitment, and
-            Sri Lankan labor compliance expertise.
+            A hands-on recruitment and candidate coordination team dedicated to matching the right people with the right opportunities.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {LEADERSHIP_TEAM.map((leader, idx) => (
+          {TEAM_PILLARS.map((member, idx) => (
             <Card
               key={idx}
-              className="p-8 text-center space-y-4 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900"
+              className="p-8 text-center space-y-4 border-slate-200 dark:border-navy-800 bg-white dark:bg-navy-900 hover:shadow-xl hover:border-teal-500/40 hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-teal-500 shadow-md">
+              <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-teal-500 shadow-md bg-teal-50 dark:bg-navy-800 p-3 flex items-center justify-center">
                 <Image
-                  src={leader.avatar}
-                  alt={leader.name}
-                  width={96}
-                  height={96}
+                  src={member.avatar}
+                  alt={member.title}
+                  width={80}
+                  height={80}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
                 <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
-                  {leader.name}
+                  {member.title}
                 </h3>
                 <p className="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider mt-1">
-                  {leader.role}
-                </p>
-                <p className="text-[11px] text-slate-400 font-medium mt-0.5">
-                  {leader.credentials}
+                  {member.role}
                 </p>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pt-2 border-t border-slate-100 dark:border-navy-800">
-                {leader.bio}
+                {member.desc}
               </p>
             </Card>
           ))}
         </div>
       </section>
 
-      {/* Milestones Timeline */}
+      {/* 5. Our Journey / Foundation */}
       <section className="bg-slate-50 dark:bg-navy-950/70 py-20 border-t border-slate-200/80 dark:border-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <Badge variant="teal">Our Journey</Badge>
+            <Badge variant="teal">OUR FOUNDATION</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy-950 dark:text-white">
-              Milestones of Growth
+              Built Step by Step for Real Hiring Needs
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {MILESTONES.map((m, idx) => (
+            {FOUNDATION_STAGES.map((m, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-xs space-y-3"
+                className="p-6 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-xs space-y-3 hover:shadow-lg hover:border-teal-500/40 transition-all duration-300"
               >
-                <span className="font-heading font-black text-2xl text-teal-600 dark:text-teal-400">
-                  {m.year}
+                <span className="font-heading font-bold text-xs uppercase tracking-wider text-teal-600 dark:text-teal-400 block">
+                  {m.stage}
                 </span>
                 <h3 className="font-heading font-bold text-lg text-navy-950 dark:text-white">
                   {m.title}
@@ -269,7 +256,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Bottom CTA Banner */}
+      {/* 6. Bottom Dark CTA Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-12 rounded-3xl bg-navy-950 text-white border border-teal-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
@@ -277,8 +264,7 @@ export default function AboutPage() {
               Ready to explore a workforce partnership?
             </h3>
             <p className="text-slate-300 text-sm max-w-xl">
-              Schedule a discovery session with our Colombo practice heads to discuss
-              your headcount and talent acquisition goals.
+              Whether you are filling open roles or looking for your next career move, connect with our team today.
             </p>
           </div>
           <Link href="/appointment" className="shrink-0">
@@ -292,4 +278,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
