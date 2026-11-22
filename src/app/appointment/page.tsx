@@ -15,9 +15,23 @@ import { Card } from "@/components/ui/Card";
 import { AppointmentForm } from "@/components/forms/AppointmentForm";
 
 export const metadata: Metadata = {
-  title: "Book an Appointment | Schedule an Executive HR Consultation",
+  title: "Book a Consultation | Talent Sourcing & Hiring Strategy Sri Lanka",
   description:
-    "Schedule a confidential workforce advisory session with our team at Prime Talents Solutions (Pvt) Ltd in Colombo, Sri Lanka.",
+    "Schedule a confidential recruitment and workforce advisory consultation with Prime Talents Solutions (Pvt) Ltd to discuss hiring timelines, candidate requirements, and staffing in Sri Lanka.",
+  keywords: [
+    "Book recruitment consultation Sri Lanka",
+    "Hire talent in Sri Lanka",
+    "Workforce consultation Colombo",
+    "Staffing strategy meeting Sri Lanka",
+    "Prime Talents consultation",
+  ],
+  openGraph: {
+    title: "Book a Consultation | Talent Sourcing & Hiring Strategy Sri Lanka",
+    description:
+      "Schedule a consultation with Prime Talents Solutions (Pvt) Ltd to accelerate your hiring and talent acquisition in Sri Lanka.",
+    url: `${siteConfig.url}/appointment`,
+    type: "website",
+  },
 };
 
 export default function AppointmentPage() {

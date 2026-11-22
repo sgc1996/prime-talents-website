@@ -19,9 +19,24 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "About Us | Practical Recruitment & Talent Solutions Sri Lanka",
+  title: "About Us | Leading Recruitment Agency in Sri Lanka",
   description:
-    "Learn about Prime Talents Solutions (Pvt) Ltd, our mission, core values, and dedicated team providing practical recruitment and workforce solutions across Sri Lanka.",
+    "Discover Prime Talents Solutions (Pvt) Ltd - a trusted recruitment agency and workforce consultancy in Sri Lanka delivering verified talent across customer care, recovery, apparel, insurance, HR, IT, and corporate sectors.",
+  keywords: [
+    "Recruitment agency in Sri Lanka",
+    "About Prime Talents Solutions",
+    "HR consultancy Sri Lanka",
+    "Workforce solutions Sri Lanka",
+    "Talent acquisition agency Sri Lanka",
+    "Prime Talents Solutions Pvt Ltd",
+  ],
+  openGraph: {
+    title: "About Us | Leading Recruitment Agency in Sri Lanka",
+    description:
+      "Learn about Prime Talents Solutions (Pvt) Ltd, our mission, core values, and team providing reliable recruitment and workforce solutions across Sri Lanka.",
+    url: `${siteConfig.url}/about`,
+    type: "website",
+  },
 };
 
 const TEAM_PILLARS = [

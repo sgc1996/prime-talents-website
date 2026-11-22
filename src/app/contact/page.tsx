@@ -15,9 +15,43 @@ import { Card } from "@/components/ui/Card";
 import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get in Touch With Our Team",
+  title: "Contact Prime Talents Solutions | Hire Talent in Sri Lanka",
   description:
-    "Get in touch with Prime Talents Solutions (Pvt) Ltd. Reach our recruitment, staffing, and candidate support teams in Colombo, Sri Lanka.",
+    "Get in touch with Prime Talents Solutions (Pvt) Ltd. Reach our recruitment and workforce specialists in Sri Lanka for hiring talent, contract staffing, or career opportunities.",
+  keywords: [
+    "Contact recruitment agency Sri Lanka",
+    "Hire talent in Sri Lanka",
+    "Recruitment consultation Sri Lanka",
+    "Prime Talents Solutions contact",
+    "Staffing agency inquiry Sri Lanka",
+  ],
+  openGraph: {
+    title: "Contact Prime Talents Solutions | Hire Talent in Sri Lanka",
+    description:
+      "Reach our recruitment consultants in Sri Lanka to discuss your hiring plans, staff augmentation requirements, or career inquiries.",
+    url: `${siteConfig.url}/contact`,
+    type: "website",
+  },
+};
+
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact Prime Talents Solutions",
+  description: "Contact information for Prime Talents Solutions (Pvt) Ltd recruitment and workforce consultancy in Sri Lanka.",
+  url: `${siteConfig.url}/contact`,
+  mainEntity: {
+    "@type": "EmploymentAgency",
+    name: siteConfig.name,
+    telephone: siteConfig.contact.phone,
+    email: siteConfig.contact.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: `${siteConfig.contact.address.line1}, ${siteConfig.contact.address.line2}`,
+      addressLocality: siteConfig.contact.address.city,
+      addressCountry: "LK",
+    },
+  },
 };
 
 export default function ContactPage() {
@@ -30,6 +64,10 @@ export default function ContactPage() {
 
   return (
     <div className="py-12 md:py-20 space-y-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
       {/* 1. Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <Badge variant="teal">Get In Touch</Badge>

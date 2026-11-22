@@ -18,14 +18,104 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "Practical Workforce & Recruitment Services | Prime Talents Solutions",
+  title: "Recruitment & Staffing Services in Sri Lanka | Prime Talents Solutions",
   description:
-    "Explore Prime Talents Solutions practical workforce services in Sri Lanka: Precision Talent Sourcing, Job Portal for Professionals, End-to-End Permanent Hiring, Contract Staffing, and Readiness & Advisory.",
+    "Explore premier workforce and recruitment services in Sri Lanka: Precision Talent Sourcing, Staff Augmentation, Contract Staffing, and Executive Search across Customer Care, Recovery, Apparel, Insurance, HR, IT, and Finance.",
+  keywords: [
+    "Recruitment agency in Sri Lanka",
+    "Staff augmentation Sri Lanka",
+    "Contract staffing solutions Sri Lanka",
+    "Permanent recruitment services Sri Lanka",
+    "Executive search Sri Lanka",
+    "Talent acquisition Sri Lanka",
+    "Call center recruitment Sri Lanka",
+    "Customer care executive recruitment Sri Lanka",
+    "Recovery officer recruitment Sri Lanka",
+    "Insurance recruitment agency Sri Lanka",
+    "Apparel recruitment agency Sri Lanka",
+    "HR executive recruitment Sri Lanka",
+    "IT recruitment agency Sri Lanka",
+  ],
+  openGraph: {
+    title: "Recruitment & Staffing Services in Sri Lanka | Prime Talents Solutions",
+    description:
+      "Precision Talent Sourcing, Staff Augmentation, Contract Staffing, and Executive Search across Customer Care, Recovery, Apparel, Insurance, HR, IT, and Finance in Sri Lanka.",
+    url: `${siteConfig.url}/services`,
+    type: "website",
+  },
+};
+
+const servicesJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Prime Talents Solutions Services",
+  description: "Workforce, recruitment, and staffing services offered by Prime Talents Solutions (Pvt) Ltd in Sri Lanka.",
+  itemListElement: [
+    {
+      "@type": "Service",
+      position: 1,
+      name: "Talent Sourcing & Screening",
+      description: "Fast talent discovery and pre-screened shortlists within 72 hours across Sri Lanka.",
+      provider: {
+        "@type": "EmploymentAgency",
+        name: siteConfig.name,
+      },
+      areaServed: "Sri Lanka",
+    },
+    {
+      "@type": "Service",
+      position: 2,
+      name: "Permanent Recruitment Solutions",
+      description: "Full-cycle hiring coordination with a 90-day candidate replacement guarantee.",
+      provider: {
+        "@type": "EmploymentAgency",
+        name: siteConfig.name,
+      },
+      areaServed: "Sri Lanka",
+    },
+    {
+      "@type": "Service",
+      position: 3,
+      name: "Staff Augmentation & Contract Staffing",
+      description: "Pre-vetted contractor deployment for temporary, fixed-term, or project-based scaling.",
+      provider: {
+        "@type": "EmploymentAgency",
+        name: siteConfig.name,
+      },
+      areaServed: "Sri Lanka",
+    },
+    {
+      "@type": "Service",
+      position: 4,
+      name: "Job Portal for Candidates & Employers",
+      description: "Verified career opportunities matching candidates with active employer vacancies.",
+      provider: {
+        "@type": "EmploymentAgency",
+        name: siteConfig.name,
+      },
+      areaServed: "Sri Lanka",
+    },
+    {
+      "@type": "Service",
+      position: 5,
+      name: "Candidate Readiness & Advisory",
+      description: "CV guidance and interview readiness support for job seekers in Sri Lanka.",
+      provider: {
+        "@type": "EmploymentAgency",
+        name: siteConfig.name,
+      },
+      areaServed: "Sri Lanka",
+    },
+  ],
 };
 
 export default function ServicesPage() {
   return (
     <div className="space-y-24 py-12 md:py-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
       {/* 1. Top Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         <Badge variant="teal">HOW WE SUPPORT YOUR HIRING &amp; CAREER GOALS</Badge>

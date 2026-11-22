@@ -18,9 +18,22 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "Company Updates & Brand Assets | Prime Talents Solutions",
+  title: "Media, Brand Assets & Company Updates | Prime Talents Solutions",
   description:
-    "Key updates, service launches, and official brand assets for partners, media, and press use by Prime Talents Solutions (Pvt) Ltd.",
+    "Official company updates, service launches, and brand assets for partners, press, and media from Prime Talents Solutions (Pvt) Ltd in Sri Lanka.",
+  keywords: [
+    "Prime Talents Solutions media",
+    "Prime Talents brand assets",
+    "Recruitment news Sri Lanka",
+    "Prime Talents press announcements",
+  ],
+  openGraph: {
+    title: "Media, Brand Assets & Company Updates | Prime Talents Solutions",
+    description:
+      "Official company updates, service launches, and brand assets for partners, press, and media from Prime Talents Solutions (Pvt) Ltd in Sri Lanka.",
+    url: `${siteConfig.url}/media`,
+    type: "website",
+  },
 };
 
 const OFFICIAL_ANNOUNCEMENTS = [
