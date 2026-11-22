@@ -1,59 +1,127 @@
 import { NextRequest, NextResponse } from "next/server";
 import { contactSchema } from "@/lib/schema";
-import { sendNotificationEmail } from "@/lib/email";
+import {
+  sendContactAdminNotification,
+  sendContactAutoReply,
+} from "@/lib/email";
+import { checkRateLimit, getClientIp } from "@/lib/rateLimit";
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
+    const clientIp = getClientIp(req);
 
-    if (body._hp_verify && body._hp_verify.length > 0) {
-      console.warn("Bot submission prevented via contact honeypot.");
-      return NextResponse.json({ success: true, message: "Message received" });
+    // 1. Rate Limiting Check (by IP: max 5 requests per 10 minutes)
+    const ipRate = checkRateLimit(`contact-ip-${clientIp}`, 5, 10 * 60 * 1000);
+    if (!ipRate.success) {
+      return NextResponse.json(
+        {
+          error:
+            "Too many requests from this network. Please wait a few minutes before submitting again.",
+        },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": "600",
+          },
+        }
+      );
     }
 
+    // 2. Parse request payload
+    let body: unknown;
+    try {
+      body = await req.json();
+    } catch {
+      return NextResponse.json(
+        { error: "Invalid JSON request payload" },
+        { status: 400 }
+      );
+    }
+
+    // 3. Honeypot Anti-Bot Verification
+    if (
+      body &&
+      typeof body === "object" &&
+      "_hp_verify" in body &&
+      Boolean((body as { _hp_verify?: unknown })._hp_verify)
+    ) {
+      console.warn(`[Anti-Bot] Honeypot triggered from IP: ${clientIp}`);
+      // Return 200 OK silently to deceive spambots without dispatching emails
+      return NextResponse.json({
+        success: true,
+        message: "Message received successfully",
+      });
+    }
+
+    // 4. Strict Schema Validation & Sanitization
     const validation = contactSchema.safeParse(body);
     if (!validation.success) {
       return NextResponse.json(
-        { error: "Validation failed", details: validation.error.flatten() },
+        {
+          error: "Validation failed. Please verify all required fields.",
+          details: validation.error.flatten().fieldErrors,
+        },
         { status: 400 }
       );
     }
 
     const data = validation.data;
 
-    await sendNotificationEmail({
-      to: process.env.ADMIN_NOTIFICATION_EMAIL || "leads@primetalentssolutions.lk",
-      replyTo: data.email,
-      subject: `[Contact Inquiry] ${data.subject} (${data.inquiryType})`,
-      html: `
-        <div style="font-family: Arial, sans-serif; color: #1e293b; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
-          <div style="background-color: #0b1f3a; padding: 20px; color: #ffffff;">
-            <h2 style="margin: 0; font-size: 18px;">New Contact Desk Inquiry</h2>
-            <p style="margin: 4px 0 0; font-size: 13px; color: #14b8a6;">Prime Talents Solutions</p>
-          </div>
-          <div style="padding: 20px;">
-            <p><strong>From:</strong> ${data.fullName} (${data.email})</p>
-            <p><strong>Phone:</strong> ${data.phone}</p>
-            <p><strong>Category:</strong> ${data.inquiryType}</p>
-            <p><strong>Subject:</strong> ${data.subject}</p>
-            <div style="margin-top: 16px; padding: 16px; background-color: #f8fafc; border-radius: 8px;">
-              <p style="margin: 0; font-size: 14px; white-space: pre-wrap;">${data.message}</p>
-            </div>
-          </div>
-        </div>
-      `,
-    });
+    // 5. Rate Limiting Check (by Email: max 3 requests per 10 minutes)
+    const emailRate = checkRateLimit(
+      `contact-email-${data.email.toLowerCase()}`,
+      3,
+      10 * 60 * 1000
+    );
+    if (!emailRate.success) {
+      return NextResponse.json(
+        {
+          error:
+            "Multiple inquiries have recently been submitted from this email address. Please allow our team time to reply.",
+        },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": "600",
+          },
+        }
+      );
+    }
+
+    // 6. Asynchronous Dual Email Dispatch:
+    //    a) Admin Notification to contact@primetalentssolutions.lk
+    //    b) Polite, professional Auto-Reply to the sender
+    const [adminResult, autoReplyResult] = await Promise.allSettled([
+      sendContactAdminNotification({
+        ...data,
+        clientIp,
+      }),
+      sendContactAutoReply({
+        ...data,
+        clientIp,
+      }),
+    ]);
+
+    if (adminResult.status === "rejected") {
+      console.error("[Email Error] Admin notification failed:", adminResult.reason);
+    }
+    if (autoReplyResult.status === "rejected") {
+      console.error("[Email Error] Auto-reply failed:", autoReplyResult.reason);
+    }
 
     return NextResponse.json({
       success: true,
-      message: "Contact message sent successfully",
+      message:
+        "Your message has been delivered to Prime Talents Solutions. An automated confirmation has been sent to your email address.",
     });
   } catch (error: unknown) {
-    console.error("API /api/contact error:", error);
+    console.error("[API Error] /api/contact unhandled exception:", error);
     return NextResponse.json(
-      { error: "Internal server error occurred while sending message" },
+      {
+        error:
+          "An unexpected error occurred while processing your message. Please try again or contact us directly via WhatsApp.",
+      },
       { status: 500 }
     );
   }
 }
-

@@ -16,12 +16,12 @@ export const appointmentSchema = z.object({
 export type AppointmentFormData = z.infer<typeof appointmentSchema>;
 
 export const contactSchema = z.object({
-  fullName: z.string().min(2, "Full name is required"),
-  email: z.string().email("Please enter a valid email address"),
-  phone: z.string().min(9, "Please enter a valid phone number"),
-  inquiryType: z.string().min(1, "Please select your inquiry type"),
-  subject: z.string().min(3, "Subject must be at least 3 characters"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  fullName: z.string().trim().min(2, "Full name is required").max(100, "Full name must be under 100 characters"),
+  email: z.string().trim().email("Please enter a valid email address").max(120, "Email address must be under 120 characters"),
+  phone: z.string().trim().min(9, "Please enter a valid phone number").max(30, "Phone number must be under 30 characters"),
+  inquiryType: z.string().trim().min(1, "Please select your inquiry type").max(80),
+  subject: z.string().trim().min(3, "Subject must be at least 3 characters").max(150, "Subject must be under 150 characters"),
+  message: z.string().trim().min(10, "Message must be at least 10 characters").max(3000, "Message must be under 3000 characters"),
   _hp_verify: z.string().max(0, "Bot detected").optional(),
 });
 

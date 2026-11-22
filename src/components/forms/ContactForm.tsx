@@ -56,7 +56,7 @@ export function ContactForm() {
         type: "success",
         title: "Message Delivered",
         description:
-          "Our Colombo representative will review your message and reply within 1 business day.",
+          "Thank you! A confirmation has been sent to your email. Our team will contact you shortly.",
       });
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Failed to submit inquiry.";
@@ -76,11 +76,10 @@ export function ContactForm() {
           <CheckCircle2 className="w-7 h-7" />
         </div>
         <h3 className="font-heading font-bold text-xl text-navy-950 dark:text-white">
-          Message Received!
+          Message Delivered Successfully!
         </h3>
-        <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed max-w-sm mx-auto">
-          Thank you for reaching out to Prime Talents Solutions. Our departmental
-          specialist will review your message and respond promptly.
+        <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed max-w-md mx-auto">
+          Thank you for reaching out to Prime Talents Solutions. An automated confirmation has been sent to your email address, and our team will get back to you shortly.
         </p>
         <Button
           variant="outline"
