@@ -102,11 +102,26 @@ export async function POST(req: NextRequest) {
       }),
     ]);
 
-    if (adminResult.status === "rejected") {
-      console.error("[Email Error] Admin notification failed:", adminResult.reason);
+    const adminOk = adminResult.status === "fulfilled" && adminResult.value.success;
+    const autoReplyOk = autoReplyResult.status === "fulfilled" && autoReplyResult.value.success;
+
+    const adminErr = adminResult.status === "rejected" ? String(adminResult.reason) : adminResult.value.error;
+    const autoReplyErr = autoReplyResult.status === "rejected" ? String(autoReplyResult.reason) : autoReplyResult.value.error;
+
+    if (!adminOk) {
+      console.error("[Email Error] Admin notification failed:", adminErr);
     }
-    if (autoReplyResult.status === "rejected") {
-      console.error("[Email Error] Auto-reply failed:", autoReplyResult.reason);
+    if (!autoReplyOk) {
+      console.error("[Email Error] Auto-reply failed:", autoReplyErr);
+    }
+
+    if (!adminOk && !autoReplyOk) {
+      return NextResponse.json(
+        {
+          error: `Email delivery failed: ${adminErr || autoReplyErr || "Mail server connection failed"}. Please verify your SMTP settings or contact us directly via WhatsApp.`,
+        },
+        { status: 502 }
+      );
     }
 
     return NextResponse.json({

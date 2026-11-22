@@ -44,6 +44,9 @@ function getSmtpTransporter() {
       user,
       pass,
     },
+    tls: {
+      rejectUnauthorized: false,
+    },
     // Pool connections for faster delivery
     pool: true,
     maxConnections: 3,
@@ -61,6 +64,7 @@ export async function sendEmail(
   options: SendEmailOptions
 ): Promise<{ success: boolean; messageId?: string; error?: string }> {
   const provider = (process.env.EMAIL_PROVIDER || "").toLowerCase();
+  const hasSmtpConfig = Boolean(process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS);
   const defaultFrom =
     process.env.SMTP_FROM ||
     `"Prime Talents Solutions" <contact@primetalentssolutions.lk>`;
@@ -70,7 +74,7 @@ export async function sendEmail(
   const sanitizedReplyTo = options.replyTo ? sanitizeHeader(options.replyTo) : undefined;
 
   // 1. SMTP / Nodemailer
-  if (provider === "nodemailer" || (!provider && process.env.SMTP_HOST)) {
+  if (provider === "nodemailer" || (hasSmtpConfig && provider !== "mock" && provider !== "resend")) {
     try {
       const transporter = getSmtpTransporter();
       if (transporter) {
