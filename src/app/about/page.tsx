@@ -6,6 +6,7 @@ import {
   ShieldCheck,
   CheckCircle2,
   Target,
+  Compass,
   Award,
   Heart,
   ArrowRight,
@@ -193,6 +194,63 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2.5 Our Vision & Our Mission */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          {/* Vision Card - Gold Accent */}
+          <div className="relative overflow-hidden rounded-3xl p-8 sm:p-10 bg-gradient-to-br from-amber-500/5 via-white to-amber-500/10 dark:from-navy-900 dark:via-navy-900/95 dark:to-amber-950/25 border-2 border-amber-400/40 dark:border-amber-500/30 shadow-xl space-y-6 group hover:border-amber-500/70 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+            <div className="space-y-5">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-2xl bg-amber-500/15 dark:bg-amber-400/10 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold shadow-sm group-hover:scale-105 group-hover:rotate-3 transition-transform">
+                  <Target className="w-7 h-7" />
+                </div>
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 font-heading">
+                    Future Direction
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold font-heading text-navy-950 dark:text-white">
+                    Our Vision
+                  </h3>
+                </div>
+              </div>
+              <p className="text-base sm:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                &ldquo;To be Sri Lanka&rsquo;s most trusted talent acquisition and placement partner—empowering businesses to build high-performing teams while connecting job seekers with reputable organizations for meaningful, long-term career growth.&rdquo;
+              </p>
+            </div>
+            <div className="pt-4 border-t border-amber-400/20 dark:border-amber-500/20 flex items-center gap-2 text-xs font-semibold text-amber-700 dark:text-amber-300">
+              <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+              <span>Empowering growth &amp; sustainable talent partnerships</span>
+            </div>
+          </div>
+
+          {/* Mission Card - Teal Accent */}
+          <div className="relative overflow-hidden rounded-3xl p-8 sm:p-10 bg-gradient-to-br from-teal-500/5 via-white to-teal-500/10 dark:from-navy-900 dark:via-navy-900/95 dark:to-teal-950/25 border-2 border-teal-500/40 dark:border-teal-500/30 shadow-xl space-y-6 group hover:border-teal-500/70 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+            <div className="space-y-5">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-2xl bg-teal-500/15 dark:bg-teal-400/10 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold shadow-sm group-hover:scale-105 group-hover:-rotate-3 transition-transform">
+                  <Compass className="w-7 h-7" />
+                </div>
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 font-heading">
+                    Our Purpose &amp; Action
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold font-heading text-navy-950 dark:text-white">
+                    Our Mission
+                  </h3>
+                </div>
+              </div>
+              <p className="text-base sm:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                &ldquo;To bridge the gap between growing organizations and job-ready talent through ethical, fast-track, and precision-driven recruitment—helping businesses secure pre-screened professionals while guiding candidates toward trusted, well-matched career opportunities.&rdquo;
+              </p>
+            </div>
+            <div className="pt-4 border-t border-teal-500/20 dark:border-teal-500/20 flex items-center gap-2 text-xs font-semibold text-teal-700 dark:text-teal-300">
+              <span className="w-2 h-2 rounded-full bg-teal-500"></span>
+              <span>Precision-driven, ethical &amp; speed-aligned hiring</span>
             </div>
           </div>
         </div>
